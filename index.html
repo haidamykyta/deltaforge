@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PolyStrike - Polymarket + Bybit P&L Visualizer</title>
+  <meta name="description" content="Build hedged positions combining Polymarket binary options with Bybit vanilla options. See combined P&L across 4 time snapshots. Free analytical tool.">
+  <meta property="og:title" content="PolyStrike - Build hedged positions. See combined P&L.">
+  <meta property="og:description" content="Combine Polymarket binary options with Bybit vanilla options. Multi-leg portfolios, 4 time snapshots, Black-Scholes pricing.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ===== FULL-PAGE VIDEO BACKGROUND ===== -->
+  <video class="global-video-bg" autoplay muted loop playsinline poster="img/hero-poster.jpg">
+    <source src="img/hero-bg.mp4" type="video/mp4">
+  </video>
+  <div class="global-video-overlay"></div>
+
+  <!-- ===== RICH BACKGROUND LAYERS ===== -->
+  <div class="page-bg"></div>
+  <div class="noise-overlay"></div>
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+  <div class="orb orb-3"></div>
+
+  <!-- ===== NAV ===== -->
+  <nav>
+    <div class="nav-inner">
+      <div class="nav-left">
+        <div class="brand-glyph">
+          <svg viewBox="0 0 28 28" fill="none">
+            <path d="M4 20.5H24" stroke="#93A6FF" stroke-width="1.5" stroke-linecap="round"/>
+            <path d="M5.5 17.5L10 12.75L14 15.25L22.5 8" stroke="#E8EDF8" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="10" cy="12.75" r="1.75" fill="#4D6BFE"/>
+            <circle cx="14" cy="15.25" r="1.75" fill="#7DD3FC"/>
+            <circle cx="22.5" cy="8" r="1.75" fill="#22C55E"/>
+          </svg>
+        </div>
+        <a href="index.html" class="logo">PolyStrike</a>
+      </div>
+      <div class="nav-links">
+        <a href="features.html" class="nav-link">Features</a>
+        <a href="strategies.html" class="nav-link">Strategies</a>
+        <a href="docs.html" class="nav-link">Docs</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="./app/" class="nav-cta">Launch App</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu">
+        <svg viewBox="0 0 24 24"><path d="M3 12h18M3 6h18M3 18h18" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== 1. HERO ===== -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="tag-chip">Polymarket + Bybit Options</div>
+        <h1>Build hedged positions.<br>See combined P&L.</h1>
+        <p class="hero-sub">Add Polymarket YES/NO positions. Browse the full Bybit BTC option chain. See combined payoff across 4 time snapshots. Save your construction as JSON.</p>
+        <div class="hero-ctas">
+          <a href="./app/" class="btn-primary">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+            Launch App
+          </a>
+          <a href="#how-it-works" class="btn-secondary">How It Works</a>
+        </div>
+        <div class="hero-chips">
+          <span class="chip">Black-Scholes</span>
+          <span class="chip">4 Time Snapshots</span>
+          <span class="chip">JSON Export</span>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-table">
+          <div class="table-header">
+            <span>BTC Options &mdash; Bybit</span>
+            <span class="table-expiry">Mar 28</span>
+          </div>
+          <table>
+            <thead>
+              <tr>
+                <th>Strike</th>
+                <th>Bid</th>
+                <th>Ask</th>
+                <th>Mid</th>
+                <th>Delta</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>88,000</td>
+                <td>4,120</td>
+                <td>4,380</td>
+                <td>4,250</td>
+                <td class="delta-pos">0.72</td>
+              </tr>
+              <tr>
+                <td>90,000</td>
+                <td>2,840</td>
+                <td>3,100</td>
+                <td>2,970</td>
+                <td class="delta-pos">0.61</td>
+              </tr>
+              <tr class="row-active">
+                <td>92,000</td>
+                <td>1,680</td>
+                <td>1,920</td>
+                <td>1,800</td>
+                <td class="delta-pos">0.48</td>
+              </tr>
+              <tr>
+                <td>94,000</td>
+                <td>890</td>
+                <td>1,100</td>
+                <td>995</td>
+                <td class="delta-pos">0.34</td>
+              </tr>
+              <tr>
+                <td>96,000</td>
+                <td>410</td>
+                <td>580</td>
+                <td>495</td>
+                <td class="delta-pos">0.21</td>
+              </tr>
+              <tr>
+                <td>98,000</td>
+                <td>150</td>
+                <td>280</td>
+                <td>215</td>
+                <td class="delta-pos">0.11</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 2. STATEMENT ===== -->
+  <section class="statement-section">
+    <div class="statement-inner">
+      <div class="statement-card animate-on-scroll">
+        <p class="statement">A naked PM bet is a coin flip. A hedged position is a trade.</p>
+        <div class="features-inline">
+          <span>Full option chain</span>
+          <span class="dot">&middot;</span>
+          <span>Combined P&L</span>
+          <span class="dot">&middot;</span>
+          <span>4 time snapshots</span>
+          <span class="dot">&middot;</span>
+          <span>JSON snapshots</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 3. HOW IT WORKS (4-step timeline) ===== -->
+  <section class="timeline-section" id="how-it-works">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <h2>Paste a URL. See the payoff.</h2>
+        <p>Four steps from a Polymarket link to a full multi-leg construction with combined P&L.</p>
+      </div>
+      <div class="timeline animate-on-scroll">
+        <div class="timeline-stage">
+          <div class="stage-marker">1</div>
+          <div>
+            <div class="stage-title">Paste URL</div>
+            <div class="stage-desc">Drop a Polymarket event URL. Auto-detect crypto, option type, spot price.</div>
+          </div>
+        </div>
+        <div class="timeline-stage">
+          <div class="stage-marker">2</div>
+          <div>
+            <div class="stage-title">Load Chain</div>
+            <div class="stage-desc">Browse Bybit BTC options. Select expiry. See bid, ask, delta for every strike.</div>
+          </div>
+        </div>
+        <div class="timeline-stage">
+          <div class="stage-marker">3</div>
+          <div>
+            <div class="stage-title">Build Position</div>
+            <div class="stage-desc">Pick PM strikes (YES/NO). Add Bybit options (buy/sell). Set quantities.</div>
+          </div>
+        </div>
+        <div class="timeline-stage">
+          <div class="stage-marker">4</div>
+          <div>
+            <div class="stage-title">See Payoff</div>
+            <div class="stage-desc">Combined P&L chart with 4 time snapshots. Price range slider. Export JSON + JPG.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 4. WHY HEDGE (3 cards) ===== -->
+  <section class="why-section">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <h2>Why hedge a prediction market bet?</h2>
+      </div>
+      <div class="why-grid">
+        <div class="why-card animate-on-scroll delay-1">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24"><path d="M12 2v10l4.5 4.5"/><circle cx="12" cy="12" r="10"/></svg>
+          </div>
+          <h3>Binary Risk</h3>
+          <p>Polymarket pays $1 or $0. A bracket bet at $0.60 means risking $0.60 to make $0.40. Miss the bracket and the entire position is gone.</p>
+        </div>
+        <div class="why-card animate-on-scroll delay-2">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24"><path d="M2 12h4l3-9 6 18 3-9h4"/></svg>
+          </div>
+          <h3>Time Decay</h3>
+          <p>A position priced at $0.99 can drop to $0.15 in hours if BTC moves 5%. The path between open and close is where the real risk lives.</p>
+        </div>
+        <div class="why-card animate-on-scroll delay-3">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h3>Bounded Loss</h3>
+          <p>Add one Bybit vanilla option. Max drawdown drops from -100% to -25%. Time decay converts temporary drawdown into profit by expiry.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 5. LIVE EXAMPLE ===== -->
+  <section class="example-section section-glow">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <h2>Real example: BTC not hitting $85K this month.</h2>
+      </div>
+      <div class="example-grid">
+        <div class="glass-card example-meta animate-on-scroll delay-1">
+          <div class="meta-title">Construction Details</div>
+          <div class="meta-row">
+            <span class="meta-label">PM Position</span>
+            <span class="meta-value">NO on "BTC hits $85K"</span>
+          </div>
+          <div class="meta-row">
+            <span class="meta-label">Bybit Hedge</span>
+            <span class="meta-value">Long Call + Short Call spread</span>
+          </div>
+          <div class="meta-row">
+            <span class="meta-label">Expiry</span>
+            <span class="meta-value">Mar 27 (Bybit) / Apr 1 (PM)</span>
+          </div>
+          <div class="meta-row">
+            <span class="meta-label">Max Drawdown</span>
+            <span class="meta-value">-25% (vs -100% naked)</span>
+          </div>
+          <div class="meta-row">
+            <span class="meta-label">Flat Zone</span>
+            <span class="meta-value">$63K - $75K (stop: -2%)</span>
+          </div>
+          <div class="meta-row">
+            <span class="meta-label">Profit at Expiry</span>
+            <span class="meta-value positive">+4% to +26%</span>
+          </div>
+        </div>
+        <div class="glass-card example-chart-wrap animate-on-scroll delay-2">
+          <div class="chart-header">
+            <span class="chart-title">P&L vs BTC Price Movement</span>
+          </div>
+          <svg viewBox="0 0 380 170" class="mock-chart">
+            <!-- Grid -->
+            <line x1="0" y1="30" x2="380" y2="30" stroke="rgba(77,107,254,0.05)" stroke-width="1"/>
+            <line x1="0" y1="60" x2="380" y2="60" stroke="rgba(77,107,254,0.05)" stroke-width="1"/>
+            <line x1="0" y1="95" x2="380" y2="95" stroke="rgba(147,166,255,0.1)" stroke-width="1" stroke-dasharray="4 3"/>
+            <line x1="0" y1="125" x2="380" y2="125" stroke="rgba(77,107,254,0.05)" stroke-width="1"/>
+            <!-- Y labels -->
+            <text x="2" y="33" fill="#22C55E" font-size="7" font-family="IBM Plex Mono">+26%</text>
+            <text x="2" y="63" fill="#8D98B8" font-size="7" font-family="IBM Plex Mono">+10%</text>
+            <text x="2" y="98" fill="#8D98B8" font-size="7" font-family="IBM Plex Mono">0%</text>
+            <text x="2" y="128" fill="#EF4444" font-size="7" font-family="IBM Plex Mono">-12%</text>
+            <!-- Profit zone fill -->
+            <path d="M20,95 L20,25 L70,38 L120,55 L170,75 L190,85 L210,92 L230,90 L260,78 L300,55 L340,35 L370,20 L370,95 Z" fill="rgba(34,197,94,0.05)"/>
+            <!-- Now curve (red) -->
+            <polyline points="20,88 60,89 100,91 140,93 170,94 190,95 210,94 250,90 290,80 330,64 360,48 370,38" fill="none" stroke="#EF4444" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round" opacity="0.8"/>
+            <!-- Mid-expiry (yellow dashed) -->
+            <polyline points="20,58 60,65 100,74 140,82 170,88 190,92 210,93 230,90 260,80 300,62 340,42 370,25" fill="none" stroke="#F59E0B" stroke-width="1.2" stroke-linejoin="round" stroke-dasharray="6 4" opacity="0.7"/>
+            <!-- Expiry (green) -->
+            <polyline points="20,25 60,38 100,55 140,72 170,84 190,90 210,93 230,90 260,78 300,55 340,35 370,20" fill="none" stroke="#22C55E" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/>
+            <!-- X labels -->
+            <text x="20" y="162" fill="#5A6480" font-size="7" font-family="IBM Plex Mono">$55K</text>
+            <text x="110" y="162" fill="#5A6480" font-size="7" font-family="IBM Plex Mono">$63K</text>
+            <text x="190" y="162" fill="#8D98B8" font-size="7" font-family="IBM Plex Mono">$70K</text>
+            <text x="265" y="162" fill="#5A6480" font-size="7" font-family="IBM Plex Mono">$77K</text>
+            <text x="345" y="162" fill="#5A6480" font-size="7" font-family="IBM Plex Mono">$85K</text>
+          </svg>
+          <div class="chart-legend">
+            <span class="legend-item"><span class="swatch swatch-now"></span> Now</span>
+            <span class="legend-item"><span class="swatch swatch-mid"></span> +12 days</span>
+            <span class="legend-item"><span class="swatch swatch-expiry"></span> At Expiry</span>
+          </div>
+        </div>
+      </div>
+      <div class="example-insight animate-on-scroll delay-3">
+        <div class="insight-label">Key Insight</div>
+        <p>The red curve (now) shows a temporary drawdown of -12% for extreme moves. Time decay converts this into profit: by expiry, the entire range from $55K to $85K is profitable. Your worst case is -2% in the flat zone. That's what hedging does.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 6. FINAL CTA ===== -->
+  <section class="final-cta-section">
+    <div class="container">
+      <h2 class="animate-on-scroll">Stop taking naked bets.</h2>
+      <p class="final-cta-sub animate-on-scroll delay-1">Build hedged constructions. See combined P&L across time. Trade with bounded risk.</p>
+      <div class="final-cta-buttons animate-on-scroll delay-2">
+        <a href="./app/" class="btn-primary">Launch App</a>
+        <a href="docs.html" class="btn-secondary">Read the Docs</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 7. FOOTER ===== -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div class="footer-brand-col">
+          <a href="index.html" class="logo">PolyStrike</a>
+          <p>Analytical tool for modeling payoff strategies on prediction markets. No trade execution, no custody, no financial advice.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Product</h4>
+          <a href="features.html">Features</a>
+          <a href="strategies.html">Strategies</a>
+          <a href="docs.html">Documentation</a>
+          <a href="./app/">Launch App</a>
+        </div>
+        <div class="footer-col">
+          <h4>Resources</h4>
+          <a href="about.html">About</a>
+          <a href="about.html#roadmap">Roadmap</a>
+          <a href="https://x.com/shtanga0x" target="_blank">@shtanga0x</a>
+          <a href="https://x.com/MykytaHaida" target="_blank">@MykytaHaida</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span class="footer-copy">shtanga0x + mykytahaida &middot; Built for serious traders.</span>
+        <div class="footer-socials">
+          <a href="https://x.com/MykytaHaida" target="_blank" aria-label="Twitter">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

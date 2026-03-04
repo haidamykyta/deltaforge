@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Features - PolyStrike</title>
+  <meta name="description" content="5 analytical tools in one platform: Backtester, Builder, Hedger, Designer, Auto-Hedger. Options-style risk management for Polymarket.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/tools.css">
+</head>
+<body>
+
+  <!-- ===== FULL-PAGE VIDEO BACKGROUND ===== -->
+  <video class="global-video-bg" autoplay muted loop playsinline poster="img/hero-poster.jpg">
+    <source src="img/hero-bg.mp4" type="video/mp4">
+  </video>
+  <div class="global-video-overlay"></div>
+
+  <div class="page-bg"></div>
+  <div class="noise-overlay"></div>
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+  <div class="orb orb-3"></div>
+
+  <!-- NAV -->
+  <nav>
+    <div class="nav-inner">
+      <div class="nav-left">
+        <div class="brand-glyph">
+          <svg viewBox="0 0 28 28" fill="none"><path d="M4 20.5H24" stroke="#93A6FF" stroke-width="1.5" stroke-linecap="round"/><path d="M5.5 17.5L10 12.75L14 15.25L22.5 8" stroke="#E8EDF8" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><circle cx="10" cy="12.75" r="1.75" fill="#4D6BFE"/><circle cx="14" cy="15.25" r="1.75" fill="#7DD3FC"/><circle cx="22.5" cy="8" r="1.75" fill="#22C55E"/></svg>
+        </div>
+        <a href="index.html" class="logo">PolyStrike</a>
+        <span class="nav-endorsement">Risk Infrastructure</span>
+      </div>
+      <div class="nav-links">
+        <a href="features.html" class="nav-link active">Features</a>
+        <a href="strategies.html" class="nav-link">Strategies</a>
+        <a href="docs.html" class="nav-link">Docs</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="./app/" class="nav-cta">Launch App</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu">
+        <svg viewBox="0 0 24 24"><path d="M3 12h18M3 6h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <section class="hero" style="padding: 100px 0 60px;">
+    <div class="container">
+      <div class="section-header animate-on-scroll" style="margin-bottom: 0;">
+        <div class="tag-chip">5 Tools. One Platform.</div>
+        <h1 style="max-width: 700px; margin: 0 auto 20px;">Every tool you need to hedge prediction markets.</h1>
+        <p style="max-width: 600px; margin: 0 auto; font-size: 17px; color: var(--text-muted); line-height: 1.75;">From historical replay to auto-optimized multi-leg constructions. Each calculator builds on the previous one.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TOOL 1: BACKTESTER -->
+  <section class="section-darker" style="padding: 100px 0;">
+    <div class="container">
+      <div class="tool-feature animate-on-scroll">
+        <div class="tool-feature-content">
+          <span class="step-tool">01 &mdash; Position Backtester</span>
+          <h2>Replay prediction markets with real price history.</h2>
+          <p>Track historical YES/NO pricing, overlay crypto spot prices (BTC/ETH/SOL), and study how each market evolved from open to resolution.</p>
+          <ul class="feature-list">
+            <li>Historical YES/NO price charting for any Polymarket event</li>
+            <li>Crypto price overlay (BTC, ETH, SOL, XRP via Binance)</li>
+            <li>Sum display toggle for multi-outcome markets</li>
+            <li>Visual correlation between underlying and prediction market pricing</li>
+          </ul>
+          <a href="./backtester/" class="btn-primary" style="margin-top: 24px;">
+            Try Backtester
+          </a>
+        </div>
+        <div class="tool-feature-visual">
+          <div class="glass-card" style="padding: 20px;">
+            <div class="chart-header">
+              <span class="chart-title">Historical YES/NO + BTC Overlay</span>
+            </div>
+            <svg viewBox="0 0 360 150" class="mock-chart">
+              <line x1="0" y1="40" x2="360" y2="40" stroke="rgba(77,107,254,0.05)"/>
+              <line x1="0" y1="75" x2="360" y2="75" stroke="rgba(77,107,254,0.05)"/>
+              <line x1="0" y1="110" x2="360" y2="110" stroke="rgba(77,107,254,0.05)"/>
+              <!-- YES line (blue) -->
+              <polyline points="20,120 50,115 80,100 110,95 140,85 170,60 200,45 230,55 260,70 290,80 320,65 340,30" fill="none" stroke="#4D6BFE" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+              <!-- NO line (dashed secondary) -->
+              <polyline points="20,30 50,35 80,50 110,55 140,65 170,90 200,105 230,95 260,80 290,70 320,85 340,120" fill="none" stroke="#93A6FF" stroke-width="1.5" stroke-dasharray="5 3" stroke-linejoin="round" opacity="0.7"/>
+              <!-- BTC overlay (cyan) -->
+              <polyline points="20,90 50,85 80,75 110,80 140,70 170,50 200,40 230,45 260,55 290,60 320,50 340,35" fill="none" stroke="#7DD3FC" stroke-width="1.2" stroke-linejoin="round" opacity="0.5"/>
+              <text x="5" y="35" fill="#4D6BFE" font-size="7" font-family="IBM Plex Mono">YES</text>
+              <text x="5" y="125" fill="#93A6FF" font-size="7" font-family="IBM Plex Mono">NO</text>
+              <text x="310" y="30" fill="#7DD3FC" font-size="7" font-family="IBM Plex Mono">BTC</text>
+              <text x="20" y="145" fill="#5A6480" font-size="7" font-family="IBM Plex Mono">Jan 1</text>
+              <text x="170" y="145" fill="#5A6480" font-size="7" font-family="IBM Plex Mono">Jan 15</text>
+              <text x="310" y="145" fill="#5A6480" font-size="7" font-family="IBM Plex Mono">Jan 31</text>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TOOL 2: BUILDER -->
+  <section class="section-glow" style="padding: 100px 0;">
+    <div class="container">
+      <div class="tool-feature tool-feature-reverse animate-on-scroll">
+        <div class="tool-feature-content">
+          <span class="step-tool">02 &mdash; Position Builder</span>
+          <h2>Project P&L with Black-Scholes pricing.</h2>
+          <p>Paste any Polymarket event URL. See projected payoff curves using European Binary and One-Touch Barrier option models. Stress-test with IV multiplier.</p>
+          <ul class="feature-list">
+            <li>Black-Scholes European Binary option pricing</li>
+            <li>One-Touch Barrier pricing for "hit" events</li>
+            <li>IV Multiplier slider (x0.25 to x4.00) for stress testing</li>
+            <li>Construction cost projection and JPG snapshot export</li>
+          </ul>
+          <a href="./builder/" class="btn-primary" style="margin-top: 24px;">
+            Try Builder
+          </a>
+        </div>
+        <div class="tool-feature-visual">
+          <div class="glass-card" style="padding: 20px;">
+            <div class="chart-header">
+              <span class="chart-title">P&L Projection &mdash; Black-Scholes</span>
+              <span class="chart-status">IV x1.5</span>
+            </div>
+            <svg viewBox="0 0 360 150" class="mock-chart">
+              <line x1="0" y1="75" x2="360" y2="75" stroke="rgba(147,166,255,0.1)" stroke-dasharray="4 3"/>
+              <path d="M20,75 L20,35 L60,40 L100,50 L140,60 L180,70 L200,73 L220,70 L260,58 L300,40 L340,25 L340,75 Z" fill="rgba(34,197,94,0.06)"/>
+              <polyline points="20,60 60,62 100,65 140,70 180,74 200,75 220,73 260,65 300,52 340,35" fill="none" stroke="#4D6BFE" stroke-width="2" stroke-linejoin="round"/>
+              <polyline points="20,35 60,40 100,50 140,60 180,70 200,75 220,70 260,58 300,40 340,25" fill="none" stroke="#22C55E" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+              <text x="5" y="70" fill="#4D6BFE" font-size="7" font-family="IBM Plex Mono">Now</text>
+              <text x="5" y="40" fill="#22C55E" font-size="7" font-family="IBM Plex Mono">Expiry</text>
+              <text x="5" y="78" fill="#8D98B8" font-size="7" font-family="IBM Plex Mono">0%</text>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TOOL 3: HEDGER -->
+  <section class="section-darker" style="padding: 100px 0;">
+    <div class="container">
+      <div class="tool-feature animate-on-scroll">
+        <div class="tool-feature-content">
+          <span class="step-tool">03 &mdash; Position Hedger</span>
+          <h2>Build multi-leg portfolios combining PM + Bybit.</h2>
+          <p>The core tool. Add Polymarket positions and Bybit options into a single portfolio. See combined P&L across 4 time snapshots. Full Bybit option chain with bid/ask/delta.</p>
+          <ul class="feature-list">
+            <li>Multi-leg portfolio: PM binary + Bybit vanilla options</li>
+            <li>Full Bybit BTC option chain (Bid/Ask/Mid/Delta)</li>
+            <li>4 time curves: Now, +7d, +14d, At Expiry</li>
+            <li>JSON snapshot save/load + PNG chart export</li>
+            <li>"Refresh prices" for live re-calculation</li>
+          </ul>
+          <a href="./app/" class="btn-primary" style="margin-top: 24px;">
+            Launch Hedger
+          </a>
+        </div>
+        <div class="tool-feature-visual">
+          <div class="glass-card" style="padding: 20px;">
+            <div class="chart-header">
+              <span class="chart-title">Combined P&L &mdash; 3 Legs</span>
+              <span class="chart-status">Live</span>
+            </div>
+            <svg viewBox="0 0 360 150" class="mock-chart">
+              <line x1="0" y1="75" x2="360" y2="75" stroke="rgba(147,166,255,0.1)" stroke-dasharray="4 3"/>
+              <!-- 4 time curves -->
+              <polyline points="20,68 60,70 100,72 140,74 180,75 200,75 220,74 260,70 300,62 340,50" fill="none" stroke="#EF4444" stroke-width="1.5" opacity="0.8"/>
+              <polyline points="20,55 60,58 100,62 140,68 180,73 200,75 220,72 260,64 300,50 340,35" fill="none" stroke="#F59E0B" stroke-width="1.2" stroke-dasharray="5 3" opacity="0.7"/>
+              <polyline points="20,45 60,50 100,58 140,65 180,72 200,75 220,72 260,62 300,45 340,28" fill="none" stroke="#93A6FF" stroke-width="1.2" stroke-dasharray="5 3" opacity="0.6"/>
+              <polyline points="20,30 60,38 100,50 140,62 180,72 200,75 220,70 260,55 300,35 340,18" fill="none" stroke="#22C55E" stroke-width="2.2" stroke-linecap="round"/>
+              <text x="5" y="32" fill="#22C55E" font-size="6" font-family="IBM Plex Mono">Expiry</text>
+              <text x="5" y="48" fill="#93A6FF" font-size="6" font-family="IBM Plex Mono">+14d</text>
+              <text x="5" y="58" fill="#F59E0B" font-size="6" font-family="IBM Plex Mono">+7d</text>
+              <text x="5" y="71" fill="#EF4444" font-size="6" font-family="IBM Plex Mono">Now</text>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TOOL 4: DESIGNER -->
+  <section class="section-glow" style="padding: 100px 0;">
+    <div class="container">
+      <div class="tool-feature tool-feature-reverse animate-on-scroll">
+        <div class="tool-feature-content">
+          <span class="step-tool">04 &mdash; Position Designer</span>
+          <h2>Auto-find the best hedge for each PM position.</h2>
+          <p>Paste your PM NO position. The optimizer scans every available Bybit option and finds the single best hedge for 3 volatility scenarios.</p>
+          <ul class="feature-list">
+            <li>3 optimization columns: +/-1%, +/-10%, +/-20% ranges</li>
+            <li>Average expected profit for each volatility scenario</li>
+            <li>Results table with best hedge per strike</li>
+            <li>"Open in Position Hedger" cross-link for detailed inspection</li>
+          </ul>
+          <a href="./designer/" class="btn-primary" style="margin-top: 24px;">
+            Try Designer
+          </a>
+        </div>
+        <div class="tool-feature-visual">
+          <div class="glass-card" style="padding: 20px;">
+            <div class="chart-header">
+              <span class="chart-title">Optimization Results</span>
+            </div>
+            <!-- Mock table -->
+            <div style="font-family: 'IBM Plex Mono', monospace; font-size: 11px;">
+              <div style="display: grid; grid-template-columns: 1.2fr 1fr 1fr 1fr; gap: 1px; margin-top: 12px;">
+                <div style="padding: 8px 10px; color: var(--text-dim); text-transform: uppercase; font-size: 9px; letter-spacing: 1px;">Strike</div>
+                <div style="padding: 8px 10px; color: var(--text-dim); text-transform: uppercase; font-size: 9px; letter-spacing: 1px; text-align: right;">+/-1%</div>
+                <div style="padding: 8px 10px; color: var(--text-dim); text-transform: uppercase; font-size: 9px; letter-spacing: 1px; text-align: right;">+/-10%</div>
+                <div style="padding: 8px 10px; color: var(--text-dim); text-transform: uppercase; font-size: 9px; letter-spacing: 1px; text-align: right;">+/-20%</div>
+              </div>
+              <div style="display: grid; grid-template-columns: 1.2fr 1fr 1fr 1fr; gap: 1px; background: rgba(77,107,254,0.04); border-radius: 8px; margin-bottom: 4px;">
+                <div style="padding: 10px; color: var(--text-muted);">BTC 85K Call</div>
+                <div style="padding: 10px; color: var(--success); text-align: right;">+8.2%</div>
+                <div style="padding: 10px; color: var(--success); text-align: right;">+4.1%</div>
+                <div style="padding: 10px; color: var(--warning); text-align: right;">+1.8%</div>
+              </div>
+              <div style="display: grid; grid-template-columns: 1.2fr 1fr 1fr 1fr; gap: 1px; background: rgba(77,107,254,0.02); border-radius: 8px; margin-bottom: 4px;">
+                <div style="padding: 10px; color: var(--text-muted);">BTC 90K Call</div>
+                <div style="padding: 10px; color: var(--success); text-align: right;">+6.5%</div>
+                <div style="padding: 10px; color: var(--success); text-align: right;">+5.2%</div>
+                <div style="padding: 10px; color: var(--success); text-align: right;">+3.1%</div>
+              </div>
+              <div style="display: grid; grid-template-columns: 1.2fr 1fr 1fr 1fr; gap: 1px; background: rgba(77,107,254,0.04); border-radius: 8px;">
+                <div style="padding: 10px; color: var(--text-muted);">BTC 95K Call</div>
+                <div style="padding: 10px; color: var(--success); text-align: right;">+3.8%</div>
+                <div style="padding: 10px; color: var(--success); text-align: right;">+6.7%</div>
+                <div style="padding: 10px; color: var(--success); text-align: right;">+4.5%</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TOOL 5: AUTO-HEDGER -->
+  <section class="section-darker" style="padding: 100px 0;">
+    <div class="container">
+      <div class="tool-feature animate-on-scroll">
+        <div class="tool-feature-content">
+          <span class="step-tool">05 &mdash; Position Auto-Hedger</span>
+          <h2>Optimal 2-leg spread hedges. Automatically.</h2>
+          <p>The most advanced tool. Creates PM strike pairs, finds different calls/puts on Bybit for each, and calculates max drawdown, avg profit, and avg loss for the full BTC price plane.</p>
+          <ul class="feature-list">
+            <li>3-leg structure: PM NO + Long Option + Short Option</li>
+            <li>PM strike pair optimization (80-60, 85-55, etc.)</li>
+            <li>Full BTC price plane analysis: max drawdown, avg profit, avg loss</li>
+            <li>6-leg double-sided constructions for bidirectional profit</li>
+            <li>"Open in Position Hedger" for manual tweaking</li>
+          </ul>
+          <a href="./auto-hedger/" class="btn-primary" style="margin-top: 24px;">
+            Try Auto-Hedger
+          </a>
+        </div>
+        <div class="tool-feature-visual">
+          <div class="glass-card" style="padding: 20px;">
+            <div class="chart-header">
+              <span class="chart-title">6-Leg Construction &mdash; Double Wing</span>
+            </div>
+            <svg viewBox="0 0 360 150" class="mock-chart">
+              <line x1="0" y1="75" x2="360" y2="75" stroke="rgba(147,166,255,0.1)" stroke-dasharray="4 3"/>
+              <line x1="180" y1="10" x2="180" y2="140" stroke="rgba(147,166,255,0.06)" stroke-dasharray="2 3"/>
+              <!-- Double wing - V shape profit on both sides -->
+              <path d="M20,75 L20,25 L70,45 L120,62 L160,72 L180,75 L200,72 L240,62 L290,45 L340,25 L340,75 Z" fill="rgba(34,197,94,0.05)"/>
+              <polyline points="20,25 70,45 120,62 160,72 180,75 200,72 240,62 290,45 340,25" fill="none" stroke="#22C55E" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/>
+              <polyline points="20,55 70,60 120,68 160,73 180,75 200,73 240,68 290,60 340,55" fill="none" stroke="#EF4444" stroke-width="1.5" opacity="0.7"/>
+              <text x="60" y="20" fill="#22C55E" font-size="7" font-family="IBM Plex Mono">+26%</text>
+              <text x="290" y="20" fill="#22C55E" font-size="7" font-family="IBM Plex Mono">+26%</text>
+              <text x="160" y="88" fill="#8D98B8" font-size="7" font-family="IBM Plex Mono">BTC Now</text>
+              <text x="20" y="145" fill="#5A6480" font-size="7" font-family="IBM Plex Mono">-20%</text>
+              <text x="310" y="145" fill="#5A6480" font-size="7" font-family="IBM Plex Mono">+20%</text>
+            </svg>
+            <div class="chart-legend">
+              <span class="legend-item"><span class="swatch swatch-expiry"></span> At Expiry</span>
+              <span class="legend-item"><span class="swatch swatch-now"></span> Now</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CROSS-TOOL WORKFLOW -->
+  <section class="section-glow" style="padding: 100px 0;">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <div class="section-label">Cross-Tool Workflow</div>
+        <h2>Each tool feeds into the next.</h2>
+        <p>Progressive complexity. Start simple, go deep when you're ready.</p>
+      </div>
+      <div class="workflow-visual animate-on-scroll delay-1">
+        <div class="workflow-flow">
+          <div class="flow-step">
+            <div class="flow-icon">01</div>
+            <div class="flow-label">Backtest</div>
+            <div class="flow-sub">Study history</div>
+          </div>
+          <div class="flow-arrow">&rarr;</div>
+          <div class="flow-step">
+            <div class="flow-icon">02</div>
+            <div class="flow-label">Build</div>
+            <div class="flow-sub">Project P&L</div>
+          </div>
+          <div class="flow-arrow">&rarr;</div>
+          <div class="flow-step flow-step-active">
+            <div class="flow-icon">03</div>
+            <div class="flow-label">Hedge</div>
+            <div class="flow-sub">Build portfolio</div>
+          </div>
+          <div class="flow-arrow">&rarr;</div>
+          <div class="flow-step">
+            <div class="flow-icon">04</div>
+            <div class="flow-label">Optimize</div>
+            <div class="flow-sub">Find best hedge</div>
+          </div>
+          <div class="flow-arrow">&rarr;</div>
+          <div class="flow-step">
+            <div class="flow-icon">05</div>
+            <div class="flow-label">Auto-Hedge</div>
+            <div class="flow-sub">Spread optimize</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="final-cta-section">
+    <div class="container">
+      <h2 class="animate-on-scroll">Ready to build hedged constructions?</h2>
+      <p class="final-cta-sub animate-on-scroll delay-1">Start with the Position Hedger. It's free, no signup required.</p>
+      <div class="final-cta-buttons animate-on-scroll delay-2">
+        <a href="./app/" class="btn-primary">Launch App</a>
+        <a href="strategies.html" class="btn-secondary">View Strategies &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div class="footer-brand-col">
+          <a href="index.html" class="logo">PolyStrike</a>
+          <p>Risk infrastructure for prediction markets. Analytical tools for modeling payoff strategies.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Product</h4>
+          <a href="features.html">Features</a>
+          <a href="strategies.html">Strategies</a>
+          <a href="docs.html">Documentation</a>
+        </div>
+        <div class="footer-col">
+          <h4>Tools</h4>
+          <a href="./backtester/">Backtester</a>
+          <a href="./builder/">Builder</a>
+          <a href="./app/">Hedger</a>
+          <a href="./designer/">Designer</a>
+          <a href="./auto-hedger/">Auto-Hedger</a>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <a href="about.html">About</a>
+          <a href="https://x.com/MykytaHaida" target="_blank">Twitter</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span class="footer-copy">shtanga0x + mykytahaida &middot; Built for serious traders.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+
+</body>
+</html>

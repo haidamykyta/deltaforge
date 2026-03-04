@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Documentation - PolyStrike</title>
+  <meta name="description" content="Learn PolyStrike in 3 minutes. Quick start guide, FAQ, and glossary for prediction market risk management tools.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ===== FULL-PAGE VIDEO BACKGROUND ===== -->
+  <video class="global-video-bg" autoplay muted loop playsinline poster="img/hero-poster.jpg">
+    <source src="img/hero-bg.mp4" type="video/mp4">
+  </video>
+  <div class="global-video-overlay"></div>
+
+  <div class="page-bg"></div>
+  <div class="noise-overlay"></div>
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+  <div class="orb orb-3"></div>
+
+  <!-- NAV -->
+  <nav>
+    <div class="nav-inner">
+      <div class="nav-left">
+        <div class="brand-glyph">
+          <svg viewBox="0 0 28 28" fill="none"><path d="M4 20.5H24" stroke="#93A6FF" stroke-width="1.5" stroke-linecap="round"/><path d="M5.5 17.5L10 12.75L14 15.25L22.5 8" stroke="#E8EDF8" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><circle cx="10" cy="12.75" r="1.75" fill="#4D6BFE"/><circle cx="14" cy="15.25" r="1.75" fill="#7DD3FC"/><circle cx="22.5" cy="8" r="1.75" fill="#22C55E"/></svg>
+        </div>
+        <a href="index.html" class="logo">PolyStrike</a>
+        <span class="nav-endorsement">Risk Infrastructure</span>
+      </div>
+      <div class="nav-links">
+        <a href="features.html" class="nav-link">Features</a>
+        <a href="strategies.html" class="nav-link">Strategies</a>
+        <a href="docs.html" class="nav-link active">Docs</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="./app/" class="nav-cta">Launch App</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu">
+        <svg viewBox="0 0 24 24"><path d="M3 12h18M3 6h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <section class="hero" style="padding: 100px 0 60px;">
+    <div class="container">
+      <div class="section-header animate-on-scroll" style="margin-bottom: 0;">
+        <div class="tag-chip">DOCUMENTATION</div>
+        <h1 style="max-width: 700px; margin: 0 auto 20px;">Learn PolyStrike in 3 minutes.</h1>
+        <p style="max-width: 600px; margin: 0 auto; font-size: 17px; color: var(--text-muted); line-height: 1.75;">Quick start guide, frequently asked questions, and a glossary of every term you need to know.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUICK START GUIDE -->
+  <section class="section-darker" style="padding: 100px 0;">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <div class="section-label">Quick Start</div>
+        <h2>Up and running in 3 steps.</h2>
+        <p>No signup. No wallet connection. Just paste a URL and go.</p>
+      </div>
+      <div class="quick-start-grid">
+        <div class="qs-step glass-card glass-card-accent animate-on-scroll delay-1">
+          <div class="qs-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <div class="qs-number">01</div>
+          <h3>Open Position Hedger</h3>
+          <p>Go to the Position Hedger app. It runs in your browser &mdash; nothing to install.</p>
+          <a href="./app/" class="qs-link">Open Position Hedger &rarr;</a>
+        </div>
+        <div class="qs-step glass-card glass-card-accent animate-on-scroll delay-2">
+          <div class="qs-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.66 0 3-4.03 3-9s-1.34-9-3-9m0 18c-1.66 0-3-4.03-3-9s1.34-9 3-9"/></svg>
+          </div>
+          <div class="qs-number">02</div>
+          <h3>Paste Polymarket URL</h3>
+          <p>Enter any Polymarket event URL. The app loads current market data &mdash; YES/NO prices, volume, and expiry.</p>
+        </div>
+        <div class="qs-step glass-card glass-card-accent animate-on-scroll delay-3">
+          <div class="qs-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          </div>
+          <div class="qs-number">03</div>
+          <h3>Add Bybit Options</h3>
+          <p>Pick options from the Bybit chain. The combined P&L chart updates instantly &mdash; see your max loss, profit zones, and time curves.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section-glow" style="padding: 100px 0;">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <div class="section-label">FAQ</div>
+        <h2>Frequently asked questions.</h2>
+        <p>Everything you need to know before you start.</p>
+      </div>
+      <div class="faq-list animate-on-scroll delay-1">
+
+        <details class="faq-item">
+          <summary class="faq-question">
+            <span>What is PolyStrike?</span>
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </summary>
+          <div class="faq-answer">
+            <p>PolyStrike is a suite of analytical tools for managing risk on prediction markets. It helps you model payoff scenarios, backtest positions, and find optimal hedges. No trading, no custody &mdash; just math and visualization.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-question">
+            <span>How does hedging work?</span>
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </summary>
+          <div class="faq-answer">
+            <p>You buy a NO position on Polymarket and pair it with a vanilla option on Bybit. The combined P&L reduces your maximum loss. If BTC moves against your PM position, the Bybit option offsets part of the damage.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-question">
+            <span>What's Black-Scholes?</span>
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </summary>
+          <div class="faq-answer">
+            <p>Black-Scholes is a mathematical model for pricing options. PolyStrike adapts it for Polymarket binary options &mdash; it estimates what a PM position "should" cost given time to expiry, volatility, and the underlying asset price.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-question">
+            <span>Is it free?</span>
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </summary>
+          <div class="faq-answer">
+            <p>Yes. All 5 tools are completely free. No signup, no credit card, no wallet connection required. Open the app and start building positions.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-question">
+            <span>What exchanges are supported?</span>
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </summary>
+          <div class="faq-answer">
+            <p>Polymarket for prediction market positions (YES/NO binary options) and Bybit for BTC vanilla options (calls and puts). The tools pull live data from both platforms.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-question">
+            <span>Can I lose money using these tools?</span>
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </summary>
+          <div class="faq-answer">
+            <p>The tools help you analyze and understand risk &mdash; they don't eliminate it. You still execute trades manually on Polymarket and Bybit. This is NOT a money button. Use the tools to model scenarios before you commit capital.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-question">
+            <span>What's a "construction"?</span>
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </summary>
+          <div class="faq-answer">
+            <p>A construction is a multi-leg position that combines PM binary options with Bybit vanilla options. By layering different instruments, you create a defined-risk profile &mdash; you know your max loss and profit zones before entering.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-question">
+            <span>How do time curves work?</span>
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </summary>
+          <div class="faq-answer">
+            <p>The P&L chart shows 4 lines: Now, +7 days, +14 days, and At Expiry. As time passes, options lose value (theta decay). The curves show how your position evolves &mdash; time decay is your friend when you're selling premium.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-question">
+            <span>What's the "flat top"?</span>
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </summary>
+          <div class="faq-answer">
+            <p>The flat top is the price range on the P&L chart where your maximum loss is minimal (around -2%). A wider flat top means a better hedge &mdash; BTC can move within that range without hurting your position.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-question">
+            <span>Who built this?</span>
+            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+          </summary>
+          <div class="faq-answer">
+            <p>shtanga0x (developer) and mykytahaida (strategy &amp; research). 1.5 years of development, from concept to 5 production tools. Built for traders who take risk seriously.</p>
+          </div>
+        </details>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- GLOSSARY -->
+  <section class="section-darker" style="padding: 100px 0;">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <div class="section-label">Glossary</div>
+        <h2>Key terms, explained simply.</h2>
+        <p>No jargon walls. One-line definitions for everything in the app.</p>
+      </div>
+      <div class="glossary-grid animate-on-scroll delay-1">
+
+        <div class="glossary-card glass-card">
+          <h4>Binary Option</h4>
+          <p>A contract that pays out a fixed amount (e.g. $1) if a condition is met, or $0 if not. Polymarket positions are binary options.</p>
+        </div>
+
+        <div class="glossary-card glass-card">
+          <h4>Strike Price</h4>
+          <p>The price level at which an option becomes profitable. For BTC options: the target BTC price. For PM: the YES/NO threshold.</p>
+        </div>
+
+        <div class="glossary-card glass-card">
+          <h4>IV (Implied Volatility)</h4>
+          <p>How much the market expects the price to move. Higher IV means options cost more because bigger swings are expected.</p>
+        </div>
+
+        <div class="glossary-card glass-card">
+          <h4>Theta (Time Decay)</h4>
+          <p>Options lose value as they approach expiry. Theta measures how much value is lost per day. Sellers benefit, buyers pay for it.</p>
+        </div>
+
+        <div class="glossary-card glass-card">
+          <h4>Delta</h4>
+          <p>How much an option's price moves when the underlying asset moves $1. Delta 0.5 means the option moves 50 cents per $1 of BTC movement.</p>
+        </div>
+
+        <div class="glossary-card glass-card">
+          <h4>Construction</h4>
+          <p>A multi-leg position combining PM binary options with Bybit vanilla options to create a specific risk/reward profile.</p>
+        </div>
+
+        <div class="glossary-card glass-card">
+          <h4>Payoff Diagram</h4>
+          <p>A chart showing your profit or loss at every possible price of the underlying asset. The main visualization in Position Hedger.</p>
+        </div>
+
+        <div class="glossary-card glass-card">
+          <h4>Spread</h4>
+          <p>A position with two options at different strikes. Limits both your max profit and max loss. Used in Auto-Hedger for defined-risk setups.</p>
+        </div>
+
+        <div class="glossary-card glass-card">
+          <h4>Straddle</h4>
+          <p>Buying both a call and a put at the same strike. Profits when BTC makes a big move in either direction.</p>
+        </div>
+
+        <div class="glossary-card glass-card">
+          <h4>Moon Bag</h4>
+          <p>A small position left open after taking profit, designed to capture outsized returns if the market moves dramatically in your favor.</p>
+        </div>
+
+        <div class="glossary-card glass-card">
+          <h4>Flat Top Zone</h4>
+          <p>The price range on a P&L chart where your loss stays minimal (around -2%). A wider flat top means a more effective hedge.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="final-cta-section">
+    <div class="container">
+      <h2 class="animate-on-scroll">Ready to try?</h2>
+      <p class="final-cta-sub animate-on-scroll delay-1">Open the Position Hedger and build your first construction. Free, no signup.</p>
+      <div class="final-cta-buttons animate-on-scroll delay-2">
+        <a href="./app/" class="btn-primary">Launch App</a>
+        <a href="features.html" class="btn-secondary">View Features &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div class="footer-brand-col">
+          <a href="index.html" class="logo">PolyStrike</a>
+          <p>Risk infrastructure for prediction markets. Analytical tools for modeling payoff strategies.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Product</h4>
+          <a href="features.html">Features</a>
+          <a href="strategies.html">Strategies</a>
+          <a href="docs.html">Documentation</a>
+        </div>
+        <div class="footer-col">
+          <h4>Tools</h4>
+          <a href="./backtester/">Backtester</a>
+          <a href="./builder/">Builder</a>
+          <a href="./app/">Hedger</a>
+          <a href="./designer/">Designer</a>
+          <a href="./auto-hedger/">Auto-Hedger</a>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <a href="about.html">About</a>
+          <a href="https://x.com/MykytaHaida" target="_blank">Twitter</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span class="footer-copy">shtanga0x + mykytahaida &middot; Built for serious traders.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+
+  <!-- Page-specific styles -->
+  <style>
+    /* ============================================
+       QUICK START GRID
+       ============================================ */
+    .quick-start-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    .qs-step {
+      padding: 36px 28px;
+      position: relative;
+      text-align: left;
+    }
+
+    .qs-icon {
+      width: 48px;
+      height: 48px;
+      background: linear-gradient(145deg, rgba(77,107,254,0.16), rgba(125,211,252,0.06));
+      border: 1px solid rgba(147,166,255,0.12);
+      border-radius: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    .qs-icon svg {
+      width: 22px;
+      height: 22px;
+      stroke: var(--primary);
+    }
+
+    .qs-number {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 42px;
+      font-weight: 800;
+      color: var(--primary);
+      opacity: 0.1;
+      position: absolute;
+      top: 20px;
+      right: 24px;
+      line-height: 1;
+    }
+
+    .qs-step h3 {
+      margin-bottom: 12px;
+    }
+
+    .qs-step p {
+      font-size: 15px;
+      color: var(--text-dim);
+      line-height: 1.7;
+      margin-bottom: 16px;
+    }
+
+    .qs-link {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 13px;
+      color: var(--primary);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .qs-link:hover {
+      color: var(--primary-hover);
+    }
+
+    /* ============================================
+       FAQ ACCORDION
+       ============================================ */
+    .faq-list {
+      max-width: 780px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .faq-item {
+      background: linear-gradient(180deg, rgba(17,27,48,0.7) 0%, rgba(15,21,40,0.6) 100%);
+      border: 1px solid rgba(147, 166, 255, 0.06);
+      transition: border-color 0.3s, background 0.3s;
+    }
+
+    .faq-item:first-child {
+      border-radius: var(--radius-md) var(--radius-md) 0 0;
+    }
+
+    .faq-item:last-child {
+      border-radius: 0 0 var(--radius-md) var(--radius-md);
+    }
+
+    .faq-item[open] {
+      border-color: rgba(147, 166, 255, 0.15);
+      background: linear-gradient(180deg, rgba(17,27,48,0.9) 0%, rgba(15,21,40,0.8) 100%);
+    }
+
+    .faq-question {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 22px 28px;
+      cursor: pointer;
+      list-style: none;
+      user-select: none;
+    }
+
+    .faq-question::-webkit-details-marker {
+      display: none;
+    }
+
+    .faq-question span {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--text);
+      line-height: 1.4;
+    }
+
+    .faq-chevron {
+      width: 20px;
+      height: 20px;
+      stroke: var(--text-dim);
+      flex-shrink: 0;
+      transition: transform 0.3s;
+    }
+
+    .faq-item[open] .faq-chevron {
+      transform: rotate(180deg);
+    }
+
+    .faq-answer {
+      padding: 0 28px 24px;
+    }
+
+    .faq-answer p {
+      font-size: 15px;
+      color: var(--text-muted);
+      line-height: 1.75;
+    }
+
+    /* ============================================
+       GLOSSARY GRID
+       ============================================ */
+    .glossary-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+    }
+
+    .glossary-card {
+      padding: 24px 26px;
+    }
+
+    .glossary-card h4 {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 10px;
+    }
+
+    .glossary-card p {
+      font-size: 14px;
+      color: var(--text-dim);
+      line-height: 1.7;
+    }
+
+    /* ============================================
+       RESPONSIVE
+       ============================================ */
+    @media (max-width: 900px) {
+      .quick-start-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+      }
+
+      .glossary-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .faq-question {
+        padding: 18px 20px;
+      }
+
+      .faq-answer {
+        padding: 0 20px 20px;
+      }
+
+      .faq-question span {
+        font-size: 15px;
+      }
+    }
+  </style>
+</body>
+</html>

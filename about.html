@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About - PolyStrike</title>
+  <meta name="description" content="PolyStrike is an analytical toolkit bringing options-style risk management to prediction markets. Meet the team, our mission, and roadmap.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ===== FULL-PAGE VIDEO BACKGROUND ===== -->
+  <video class="global-video-bg" autoplay muted loop playsinline poster="img/hero-poster.jpg">
+    <source src="img/hero-bg.mp4" type="video/mp4">
+  </video>
+  <div class="global-video-overlay"></div>
+
+  <div class="page-bg"></div>
+  <div class="noise-overlay"></div>
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+  <div class="orb orb-3"></div>
+
+  <!-- NAV -->
+  <nav>
+    <div class="nav-inner">
+      <div class="nav-left">
+        <div class="brand-glyph">
+          <svg viewBox="0 0 28 28" fill="none"><path d="M4 20.5H24" stroke="#93A6FF" stroke-width="1.5" stroke-linecap="round"/><path d="M5.5 17.5L10 12.75L14 15.25L22.5 8" stroke="#E8EDF8" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><circle cx="10" cy="12.75" r="1.75" fill="#4D6BFE"/><circle cx="14" cy="15.25" r="1.75" fill="#7DD3FC"/><circle cx="22.5" cy="8" r="1.75" fill="#22C55E"/></svg>
+        </div>
+        <a href="index.html" class="logo">PolyStrike</a>
+        <span class="nav-endorsement">Risk Infrastructure</span>
+      </div>
+      <div class="nav-links">
+        <a href="features.html" class="nav-link">Features</a>
+        <a href="strategies.html" class="nav-link">Strategies</a>
+        <a href="docs.html" class="nav-link">Docs</a>
+        <a href="about.html" class="nav-link active">About</a>
+        <a href="./app/" class="nav-cta">Launch App</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu">
+        <svg viewBox="0 0 24 24"><path d="M3 12h18M3 6h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+  </nav>
+
+  <!-- MISSION HERO -->
+  <section class="hero" style="padding: 100px 0 60px;">
+    <div class="container">
+      <div class="section-header animate-on-scroll" style="margin-bottom: 0;">
+        <div class="tag-chip">About PolyStrike</div>
+        <h1 style="max-width: 750px; margin: 0 auto 24px;">Risk infrastructure for the prediction market era.</h1>
+        <p style="max-width: 660px; margin: 0 auto; font-size: 17px; color: var(--text-muted); line-height: 1.75;">PolyStrike is an analytical toolkit that brings options-style risk management to prediction markets. We help traders make decisions based on risk analysis, not intuition. No trade execution. No custody. No financial advice. Just tools that teach risk management and reduce impulsive trading.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT WE BELIEVE -->
+  <section class="section-darker" style="padding: 100px 0;">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <div class="section-label">Core Principles</div>
+        <h2>What we believe.</h2>
+      </div>
+      <div class="principles-grid">
+        <div class="glass-card glass-card-accent animate-on-scroll delay-1">
+          <div class="principle-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+          </div>
+          <h3>Prediction Markets = Option Chains</h3>
+          <p>Every bracket is a strike. Every price is a premium. The payout is binary. Once you see it this way, traditional risk tools become directly applicable.</p>
+        </div>
+        <div class="glass-card glass-card-accent animate-on-scroll delay-2">
+          <div class="principle-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h3>Risk Management > Alpha</h3>
+          <p>Even the best thesis fails without position sizing. Tools that show risk before the trade save more money than any signal.</p>
+        </div>
+        <div class="glass-card glass-card-accent animate-on-scroll delay-3">
+          <div class="principle-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          </div>
+          <h3>Public Good Infrastructure</h3>
+          <p>Better-informed traders = better price discovery = healthier markets. Our tools improve the ecosystem for everyone.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEAM -->
+  <section class="section-glow" style="padding: 100px 0;">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <div class="section-label">The Team</div>
+        <h2>Built by traders, for traders.</h2>
+      </div>
+      <div class="team-grid">
+        <div class="glass-card glass-card-accent team-card animate-on-scroll delay-1">
+          <div class="team-avatar">
+            <span class="team-initials">SB</span>
+          </div>
+          <div class="team-info">
+            <h3>Stepan Bobrovnikov</h3>
+            <span class="team-handle">@shtanga0x</span>
+            <span class="team-role">Full-Stack Developer</span>
+            <ul class="team-details">
+              <li>Built all 5 analytical tools</li>
+              <li>React 19 + MUI 7 + Recharts</li>
+              <li>Black-Scholes pricing engine</li>
+              <li>1.5 years of development</li>
+            </ul>
+            <a href="https://x.com/shtanga0x" class="team-social" target="_blank">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+              <span>@shtanga0x</span>
+            </a>
+          </div>
+        </div>
+        <div class="glass-card glass-card-accent team-card animate-on-scroll delay-2">
+          <div class="team-avatar">
+            <span class="team-initials">MH</span>
+          </div>
+          <div class="team-info">
+            <h3>Mykyta Haida</h3>
+            <span class="team-handle">@MykytaHaida</span>
+            <span class="team-role">Strategy, Content, Partnerships</span>
+            <ul class="team-details">
+              <li>Trading strategy development</li>
+              <li>Grant applications &amp; business development</li>
+              <li>Content &amp; community</li>
+            </ul>
+            <a href="https://x.com/MykytaHaida" class="team-social" target="_blank">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+              <span>@MykytaHaida</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ROADMAP -->
+  <section class="section-darker" id="roadmap" style="padding: 100px 0;">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <div class="section-label">Roadmap</div>
+        <h2>Where we're headed.</h2>
+      </div>
+      <div class="roadmap-timeline">
+        <div class="roadmap-item roadmap-active animate-on-scroll delay-1">
+          <div class="roadmap-marker">
+            <div class="roadmap-dot"></div>
+            <div class="roadmap-line"></div>
+          </div>
+          <div class="roadmap-content">
+            <span class="roadmap-phase">Phase 1</span>
+            <span class="roadmap-status-badge">Current</span>
+            <h3>UX/UI Improvements + Extended Payoff Analytics</h3>
+            <p>Refining the interface across all 5 tools. Adding deeper payoff visualization, scenario modeling, and improved chart interactions.</p>
+          </div>
+        </div>
+        <div class="roadmap-item animate-on-scroll delay-2">
+          <div class="roadmap-marker">
+            <div class="roadmap-dot"></div>
+            <div class="roadmap-line"></div>
+          </div>
+          <div class="roadmap-content">
+            <span class="roadmap-phase">Phase 2</span>
+            <h3>Multi-Platform Integrations</h3>
+            <p>Kalshi market support, Chrome extension for volume attribution, unified domain consolidating all tools under one roof.</p>
+          </div>
+        </div>
+        <div class="roadmap-item animate-on-scroll delay-3">
+          <div class="roadmap-marker">
+            <div class="roadmap-dot"></div>
+            <div class="roadmap-line"></div>
+          </div>
+          <div class="roadmap-content">
+            <span class="roadmap-phase">Phase 3</span>
+            <h3>Advanced Strategy Toolkit</h3>
+            <p>Pre-built strategy templates, custom strategy builder, advanced Greeks calculations, and volatility surface modeling.</p>
+          </div>
+        </div>
+        <div class="roadmap-item animate-on-scroll delay-4">
+          <div class="roadmap-marker">
+            <div class="roadmap-dot"></div>
+          </div>
+          <div class="roadmap-content">
+            <span class="roadmap-phase">Phase 4</span>
+            <h3>Portfolio Simulation + Institutional Analytics</h3>
+            <p>Full portfolio risk simulation, institutional-grade reporting, API access for programmatic strategy execution and analysis.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMPETITIVE LANDSCAPE -->
+  <section class="section-glow" style="padding: 100px 0;">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <div class="section-label">Competitive Landscape</div>
+        <h2>Nobody else builds this.</h2>
+        <p>Out of 170+ tools in the Polymarket builder ecosystem:</p>
+      </div>
+      <div class="competitive-stats animate-on-scroll delay-1">
+        <div class="comp-stat">
+          <span class="comp-number">0</span>
+          <span class="comp-label">provide payoff visualization before trade entry</span>
+        </div>
+        <div class="comp-stat">
+          <span class="comp-number">0</span>
+          <span class="comp-label">teach structured risk management</span>
+        </div>
+        <div class="comp-stat">
+          <span class="comp-number">0</span>
+          <span class="comp-label">offer multi-leg position design</span>
+        </div>
+        <div class="comp-stat">
+          <span class="comp-number">0</span>
+          <span class="comp-label">have backtesting for PM strategies</span>
+        </div>
+        <div class="comp-stat">
+          <span class="comp-number">0</span>
+          <span class="comp-label">offer automated hedging</span>
+        </div>
+      </div>
+      <div class="comp-conclusion animate-on-scroll delay-2">
+        <p>PolyStrike is the risk infrastructure layer. Nobody else builds this.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- REVENUE MODEL -->
+  <section class="section-darker" style="padding: 100px 0;">
+    <div class="container">
+      <div class="section-header animate-on-scroll">
+        <div class="section-label">Revenue Model</div>
+        <h2>Sustainable by design.</h2>
+      </div>
+      <div class="revenue-grid animate-on-scroll delay-1">
+        <div class="glass-card glass-card-accent revenue-card">
+          <div class="revenue-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+          </div>
+          <h3>Polymarket Builders Rewards</h3>
+          <p>Volume attribution through referral and integration programs.</p>
+        </div>
+        <div class="glass-card glass-card-accent revenue-card">
+          <div class="revenue-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          </div>
+          <h3>Grant Programs</h3>
+          <p>PM Builders, Kalshi, Polygon, dYdX, and ecosystem grants.</p>
+        </div>
+        <div class="glass-card glass-card-accent revenue-card">
+          <div class="revenue-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          </div>
+          <h3>Browser Extension</h3>
+          <p>Planned Chrome extension for on-page risk overlays and volume attribution.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="final-cta-section">
+    <div class="container">
+      <h2 class="animate-on-scroll">Want to partner or integrate?</h2>
+      <p class="final-cta-sub animate-on-scroll delay-1">We're open to collaborations, integrations, and grant partnerships. Reach out on Twitter.</p>
+      <div class="final-cta-buttons animate-on-scroll delay-2">
+        <a href="https://x.com/MykytaHaida" class="btn-primary" target="_blank">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          @MykytaHaida
+        </a>
+        <a href="https://x.com/shtanga0x" class="btn-secondary" target="_blank">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          @shtanga0x
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div class="footer-brand-col">
+          <a href="index.html" class="logo">PolyStrike</a>
+          <p>Risk infrastructure for prediction markets. Analytical tools for modeling payoff strategies.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Product</h4>
+          <a href="features.html">Features</a>
+          <a href="strategies.html">Strategies</a>
+          <a href="docs.html">Documentation</a>
+        </div>
+        <div class="footer-col">
+          <h4>Tools</h4>
+          <a href="./backtester/">Backtester</a>
+          <a href="./builder/">Builder</a>
+          <a href="./app/">Hedger</a>
+          <a href="./designer/">Designer</a>
+          <a href="./auto-hedger/">Auto-Hedger</a>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <a href="about.html">About</a>
+          <a href="https://x.com/MykytaHaida" target="_blank">Twitter</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span class="footer-copy">shtanga0x + mykytahaida &middot; Built for serious traders.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+
+  <!-- Page-specific styles -->
+  <style>
+    /* PRINCIPLES GRID */
+    .principles-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    .principles-grid .glass-card {
+      text-align: center;
+      padding: 40px 28px;
+    }
+
+    .principle-icon {
+      width: 56px;
+      height: 56px;
+      background: linear-gradient(145deg, rgba(77,107,254,0.16), rgba(125,211,252,0.06));
+      border: 1px solid rgba(147,166,255,0.12);
+      border-radius: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 24px;
+    }
+
+    .principle-icon svg {
+      width: 24px;
+      height: 24px;
+      stroke: var(--primary);
+    }
+
+    .principles-grid h3 {
+      margin-bottom: 12px;
+      font-size: 18px;
+    }
+
+    .principles-grid p {
+      font-size: 15px;
+      color: var(--text-dim);
+      line-height: 1.7;
+    }
+
+    /* TEAM GRID */
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 28px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .team-card {
+      padding: 40px 32px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .team-avatar {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, rgba(77,107,254,0.25), rgba(125,211,252,0.12));
+      border: 2px solid rgba(147,166,255,0.2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+      box-shadow: 0 12px 32px rgba(77,107,254,0.15);
+    }
+
+    .team-initials {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 24px;
+      font-weight: 800;
+      color: var(--text);
+      letter-spacing: -1px;
+    }
+
+    .team-info h3 {
+      margin-bottom: 4px;
+      font-size: 20px;
+    }
+
+    .team-handle {
+      display: block;
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 12px;
+      color: var(--primary);
+      margin-bottom: 12px;
+    }
+
+    .team-role {
+      display: inline-block;
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 11px;
+      color: var(--secondary);
+      background: rgba(147, 166, 255, 0.06);
+      border: 1px solid rgba(147, 166, 255, 0.12);
+      padding: 5px 14px;
+      border-radius: var(--radius-pill);
+      letter-spacing: 0.3px;
+      margin-bottom: 20px;
+    }
+
+    .team-details {
+      list-style: none;
+      padding: 0;
+      margin-bottom: 20px;
+      text-align: left;
+      width: 100%;
+    }
+
+    .team-details li {
+      font-size: 14px;
+      color: var(--text-dim);
+      padding: 6px 0 6px 20px;
+      position: relative;
+      line-height: 1.6;
+    }
+
+    .team-details li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 12px;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: rgba(77,107,254,0.3);
+      border: 1px solid rgba(77,107,254,0.5);
+    }
+
+    .team-social {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 13px;
+      color: var(--text-dim);
+      text-decoration: none;
+      padding: 8px 18px;
+      border: 1px solid rgba(147, 166, 255, 0.1);
+      border-radius: var(--radius-pill);
+      transition: all 0.2s;
+    }
+
+    .team-social:hover {
+      color: var(--text-muted);
+      border-color: rgba(147, 166, 255, 0.25);
+      background: rgba(147, 166, 255, 0.04);
+    }
+
+    .team-social svg {
+      width: 16px;
+      height: 16px;
+    }
+
+    /* ROADMAP TIMELINE */
+    .roadmap-timeline {
+      max-width: 700px;
+      margin: 0 auto;
+      position: relative;
+    }
+
+    .roadmap-item {
+      display: flex;
+      gap: 28px;
+      position: relative;
+    }
+
+    .roadmap-marker {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      flex-shrink: 0;
+      width: 24px;
+    }
+
+    .roadmap-dot {
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background: rgba(77,107,254,0.15);
+      border: 2px solid rgba(77,107,254,0.3);
+      flex-shrink: 0;
+      position: relative;
+      z-index: 1;
+      margin-top: 4px;
+    }
+
+    .roadmap-active .roadmap-dot {
+      background: var(--primary);
+      border-color: var(--primary);
+      box-shadow: 0 0 20px rgba(77,107,254,0.4);
+    }
+
+    .roadmap-line {
+      width: 2px;
+      flex: 1;
+      background: rgba(147, 166, 255, 0.08);
+      margin-top: 4px;
+    }
+
+    .roadmap-content {
+      padding-bottom: 48px;
+    }
+
+    .roadmap-item:last-child .roadmap-content {
+      padding-bottom: 0;
+    }
+
+    .roadmap-phase {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--primary);
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      display: inline-block;
+      margin-bottom: 8px;
+    }
+
+    .roadmap-status-badge {
+      display: inline-block;
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 10px;
+      font-weight: 600;
+      color: var(--success);
+      background: rgba(34, 197, 94, 0.08);
+      border: 1px solid rgba(34, 197, 94, 0.2);
+      padding: 3px 10px;
+      border-radius: var(--radius-pill);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-left: 8px;
+      vertical-align: middle;
+    }
+
+    .roadmap-content h3 {
+      margin-bottom: 8px;
+      font-size: 18px;
+    }
+
+    .roadmap-content p {
+      font-size: 15px;
+      color: var(--text-dim);
+      line-height: 1.7;
+    }
+
+    /* COMPETITIVE STATS */
+    .competitive-stats {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      max-width: 700px;
+      margin: 0 auto;
+      background: linear-gradient(180deg, rgba(17,27,48,0.85) 0%, rgba(15,21,40,0.75) 100%);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+    }
+
+    .comp-stat {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      padding: 20px 32px;
+      border-bottom: 1px solid rgba(77, 107, 254, 0.06);
+      transition: background 0.2s;
+    }
+
+    .comp-stat:last-child {
+      border-bottom: none;
+    }
+
+    .comp-stat:hover {
+      background: rgba(77, 107, 254, 0.03);
+    }
+
+    .comp-number {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 36px;
+      font-weight: 800;
+      color: var(--text);
+      min-width: 48px;
+      text-align: center;
+      letter-spacing: -1px;
+    }
+
+    .comp-label {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 13px;
+      color: var(--text-dim);
+      line-height: 1.5;
+    }
+
+    .comp-conclusion {
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .comp-conclusion p {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--text);
+      letter-spacing: -0.3px;
+    }
+
+    /* REVENUE GRID */
+    .revenue-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    .revenue-card {
+      text-align: center;
+      padding: 40px 24px;
+    }
+
+    .revenue-icon {
+      width: 56px;
+      height: 56px;
+      background: linear-gradient(145deg, rgba(34,197,94,0.12), rgba(77,107,254,0.06));
+      border: 1px solid rgba(34,197,94,0.15);
+      border-radius: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 20px;
+    }
+
+    .revenue-icon svg {
+      width: 24px;
+      height: 24px;
+      stroke: var(--success);
+    }
+
+    .revenue-card h3 {
+      margin-bottom: 10px;
+      font-size: 17px;
+    }
+
+    .revenue-card p {
+      font-size: 14px;
+      color: var(--text-dim);
+      line-height: 1.7;
+    }
+
+    /* CTA BUTTONS SVG */
+    .final-cta-buttons .btn-primary svg,
+    .final-cta-buttons .btn-secondary svg {
+      width: 16px;
+      height: 16px;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 900px) {
+      .principles-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+      }
+
+      .team-grid {
+        grid-template-columns: 1fr;
+        max-width: 480px;
+      }
+
+      .revenue-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+      }
+
+      .comp-stat {
+        padding: 16px 24px;
+      }
+
+      .comp-number {
+        font-size: 28px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .roadmap-content {
+        padding-bottom: 32px;
+      }
+
+      .comp-stat {
+        gap: 16px;
+        padding: 14px 20px;
+      }
+
+      .comp-number {
+        font-size: 24px;
+        min-width: 36px;
+      }
+
+      .comp-label {
+        font-size: 12px;
+      }
+    }
+  </style>
+</body>
+</html>

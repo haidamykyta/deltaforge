@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Strategies - PolyStrike</title>
+  <meta name="description" content="6 proven options strategies adapted for prediction markets. From straddles to calendar plays. Built from 1.5 years of live trading on Polymarket.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ===== FULL-PAGE VIDEO BACKGROUND ===== -->
+  <video class="global-video-bg" autoplay muted loop playsinline poster="img/hero-poster.jpg">
+    <source src="img/hero-bg.mp4" type="video/mp4">
+  </video>
+  <div class="global-video-overlay"></div>
+
+  <div class="page-bg"></div>
+  <div class="noise-overlay"></div>
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+  <div class="orb orb-3"></div>
+
+  <!-- NAV -->
+  <nav>
+    <div class="nav-inner">
+      <div class="nav-left">
+        <div class="brand-glyph">
+          <svg viewBox="0 0 28 28" fill="none"><path d="M4 20.5H24" stroke="#93A6FF" stroke-width="1.5" stroke-linecap="round"/><path d="M5.5 17.5L10 12.75L14 15.25L22.5 8" stroke="#E8EDF8" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><circle cx="10" cy="12.75" r="1.75" fill="#4D6BFE"/><circle cx="14" cy="15.25" r="1.75" fill="#7DD3FC"/><circle cx="22.5" cy="8" r="1.75" fill="#22C55E"/></svg>
+        </div>
+        <a href="index.html" class="logo">PolyStrike</a>
+        <span class="nav-endorsement">Risk Infrastructure</span>
+      </div>
+      <div class="nav-links">
+        <a href="features.html" class="nav-link">Features</a>
+        <a href="strategies.html" class="nav-link active">Strategies</a>
+        <a href="docs.html" class="nav-link">Docs</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="./app/" class="nav-cta">Launch App</a>
+      </div>
+      <button class="nav-toggle" aria-label="Menu">
+        <svg viewBox="0 0 24 24"><path d="M3 12h18M3 6h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <section class="hero" style="padding: 100px 0 60px;">
+    <div class="container">
+      <div class="section-header animate-on-scroll" style="margin-bottom: 0;">
+        <div class="tag-chip">6 Proven Strategies</div>
+        <h1 style="max-width: 750px; margin: 0 auto 20px;">Options strategies adapted for prediction markets.</h1>
+        <p style="max-width: 640px; margin: 0 auto; font-size: 17px; color: var(--text-muted); line-height: 1.75;">From 1.5 years of live trading on Polymarket. Traditional options playbooks rewritten for binary outcomes, bracket markets, and time-bound resolution.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- STRATEGY 1: THE STRADDLE -->
+  <section class="section-darker" style="padding: 100px 0;">
+    <div class="container">
+      <div class="strat-block animate-on-scroll">
+        <div class="strat-content">
+          <span class="step-tool">01 &mdash; The Straddle</span>
+          <h2>Buy BOTH YES and NO on the same market.</h2>
+          <p>The classic volatility play. You don't need to know direction &mdash; you need the market to move. Buy both sides before a catalyst, profit when one side surges more than the other costs.</p>
+
+          <div class="strat-when">
+            <h4>When to Use</h4>
+            <ul class="feature-list">
+              <li>Market near 50/50 (YES at 45c-55c)</li>
+              <li>Known catalyst approaching (earnings, vote, ruling)</li>
+              <li>High volatility expected but direction uncertain</li>
+              <li>You want exposure to movement, not outcome</li>
+            </ul>
+          </div>
+
+          <div class="strat-numbers">
+            <div class="strat-num-row">
+              <span class="strat-num-label">Max Loss (hold to resolution)</span>
+              <span class="strat-num-value negative">~4-5%</span>
+            </div>
+            <div class="strat-num-row">
+              <span class="strat-num-label">Max Loss (early exit)</span>
+              <span class="strat-num-value warning">~2-5%</span>
+            </div>
+            <div class="strat-num-row">
+              <span class="strat-num-label">Profit Potential</span>
+              <span class="strat-num-value positive">Unlimited on breakout</span>
+            </div>
+          </div>
+
+          <div class="strat-insight">
+            <div class="insight-label">Key Insight</div>
+            <p>Pure 50/50 straddles break even by definition. The edge comes from pre-catalyst entry &mdash; buying before the market prices in the event, then selling the winning side during the volatility spike.</p>
+          </div>
+
+          <a href="./app/" class="btn-primary" style="margin-top: 28px;">
+            Model this in PolyStrike
+          </a>
+        </div>
+        <div class="strat-visual">
+          <div class="glass-card" style="padding: 20px;">
+            <div class="chart-header">
+              <span class="chart-title">Straddle P&L &mdash; V Shape</span>
+            </div>
+            <svg viewBox="0 0 360 180" class="mock-chart">
+              <!-- Grid -->
+              <line x1="0" y1="45" x2="360" y2="45" stroke="rgba(77,107,254,0.05)"/>
+              <line x1="0" y1="90" x2="360" y2="90" stroke="rgba(147,166,255,0.1)" stroke-dasharray="4 3"/>
+              <line x1="0" y1="135" x2="360" y2="135" stroke="rgba(77,107,254,0.05)"/>
+              <line x1="180" y1="10" x2="180" y2="165" stroke="rgba(147,166,255,0.06)" stroke-dasharray="2 3"/>
+              <!-- Profit zone fill -->
+              <path d="M20,90 L20,15 L80,38 L140,68 L170,82 L180,90 L190,82 L220,68 L280,38 L340,15 L340,90 Z" fill="rgba(34,197,94,0.05)"/>
+              <!-- Loss zone fill -->
+              <path d="M140,90 L140,105 L160,98 L180,100 L200,98 L220,105 L220,90 Z" fill="rgba(239,68,68,0.04)"/>
+              <!-- Expiry P&L (V shape) -->
+              <polyline points="20,15 60,32 100,52 140,74 160,84 180,90 200,84 220,74 260,52 300,32 340,15" fill="none" stroke="#22C55E" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/>
+              <!-- Now curve (flatter) -->
+              <polyline points="20,55 60,62 100,72 140,82 160,88 180,92 200,88 220,82 260,72 300,62 340,55" fill="none" stroke="#EF4444" stroke-width="1.5" stroke-linejoin="round" opacity="0.7"/>
+              <!-- Labels -->
+              <text x="165" y="108" fill="#EF4444" font-size="7" font-family="IBM Plex Mono">Max Loss</text>
+              <text x="5" y="20" fill="#22C55E" font-size="7" font-family="IBM Plex Mono">+Profit</text>
+              <text x="160" y="175" fill="#8D98B8" font-size="7" font-family="IBM Plex Mono">50/50</text>
+              <text x="20" y="175" fill="#5A6480" font-size="7" font-family="IBM Plex Mono">NO wins</text>
+              <text x="295" y="175" fill="#5A6480" font-size="7" font-family="IBM Plex Mono">YES wins</text>
+            </svg>
+            <div class="chart-legend">
+              <span class="legend-item"><span class="swatch swatch-expiry"></span> At Resolution</span>
+              <span class="legend-item"><span class="swatch swatch-now"></span> Now</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STRATEGY 2: THE BRACKET SPREAD -->
+  <section class="section-glow" style="padding: 100px 0;">
+    <div class="container">
+      <div class="strat-block strat-block-reverse animate-on-scroll">
+        <div class="strat-content">
+          <span class="step-tool">02 &mdash; The Bracket Spread (Bull/Bear)</span>
+          <h2>Use related bracket markets as synthetic strike prices.</h2>
+          <p>Polymarket bracket markets (e.g., "BTC $80K-$85K", "BTC $85K-$90K") behave like strike prices in traditional options. Buy one bracket YES, sell the adjacent bracket YES to create a defined-risk directional bet.</p>
+
+          <div class="strat-when">
+            <h4>When to Use</h4>
+            <ul class="feature-list">
+              <li>Multiple related brackets exist for the same underlying</li>
+              <li>You have a directional view (bullish or bearish)</li>
+              <li>Want defined risk instead of binary all-or-nothing</li>
+              <li>Adjacent brackets are mispriced relative to each other</li>
+            </ul>
+          </div>
+
+          <div class="strat-numbers">
+            <div class="strat-num-row">
+              <span class="strat-num-label">Risk Profile</span>
+              <span class="strat-num-value">Defined (spread width)</span>
+            </div>
+            <div class="strat-num-row">
+              <span class="strat-num-label">Max Loss</span>
+              <span class="strat-num-value negative">Spread debit</span>
+            </div>
+            <div class="strat-num-row">
+              <span class="strat-num-label">Max Profit</span>
+              <span class="strat-num-value positive">$1 - spread debit</span>
+            </div>
+          </div>
+
+          <div class="strat-insight">
+            <div class="insight-label">Key Insight</div>
+            <p>Spreads shine when you're CLOSE but not exact. If BTC ends at $84,900 instead of $85,100, a naked $85K+ bet loses 100%. A spread loses only the debit. Brackets let you be approximately right and still profit.</p>
+          </div>
+
+          <a href="./app/" class="btn-primary" style="margin-top: 28px;">
+            Model this in PolyStrike
+          </a>
+        </div>
+        <div class="strat-visual">
+          <div class="glass-card" style="padding: 20px;">
+            <div class="chart-header">
+              <span class="chart-title">Bull Spread P&L &mdash; Defined Risk</span>
+            </div>
+            <svg viewBox="0 0 360 180" class="mock-chart">
+              <!-- Grid -->
+              <line x1="0" y1="45" x2="360" y2="45" stroke="rgba(77,107,254,0.05)"/>
+              <line x1="0" y1="90" x2="360" y2="90" stroke="rgba(147,166,255,0.1)" stroke-dasharray="4 3"/>
+              <line x1="0" y1="135" x2="360" y2="135" stroke="rgba(77,107,254,0.05)"/>
+              <!-- Profit zone fill -->
+              <path d="M200,90 L200,40 L340,40 L340,90 Z" fill="rgba(34,197,94,0.04)"/>
+              <!-- Loss zone fill -->
+              <path d="M20,90 L20,130 L140,130 L140,90 Z" fill="rgba(239,68,68,0.04)"/>
+              <!-- Expiry P&L (step shape) -->
+              <polyline points="20,130 80,130 140,130 170,90 200,40 260,40 340,40" fill="none" stroke="#22C55E" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/>
+              <!-- Now curve -->
+              <polyline points="20,115 80,112 140,105 170,90 200,70 260,58 340,52" fill="none" stroke="#EF4444" stroke-width="1.5" stroke-linejoin="round" opacity="0.7"/>
+              <!-- Labels -->
+              <text x="40" y="145" fill="#EF4444" font-size="7" font-family="IBM Plex Mono">Max Loss (debit)</text>
+              <text x="240" y="35" fill="#22C55E" font-size="7" font-family="IBM Plex Mono">Max Profit</text>
+              <text x="125" y="175" fill="#5A6480" font-size="7" font-family="IBM Plex Mono">Bracket A</text>
+              <text x="230" y="175" fill="#5A6480" font-size="7" font-family="IBM Plex Mono">Bracket B</text>
+              <!-- Strike lines -->
+              <line x1="140" y1="25" x2="140" y2="160" stroke="rgba(77,107,254,0.15)" stroke-dasharray="3 3"/>
+              <line x1="200" y1="25" x2="200" y2="160" stroke="rgba(77,107,254,0.15)" stroke-dasharray="3 3"/>
+            </svg>
+            <div class="chart-legend">
+              <span class="legend-item"><span class="swatch swatch-expiry"></span> At Resolution</span>
+              <span class="legend-item"><span class="swatch swatch-now"></span> Now</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STRATEGY 3: THE IRON CONDOR -->
+  <section class="section-darker" style="padding: 100px 0;">
+    <div class="container">
+      <div class="strat-block animate-on-scroll">
+        <div class="strat-content">
+          <span class="step-tool">03 &mdash; The Iron Condor (Range Play)</span>
+          <h2>Bet on the MIDDLE range outcomes. Skip the extremes.</h2>
+          <p>When a market has 4+ brackets, the extremes are usually overpriced by retail excitement. Buy the middle 2-3 brackets (YES), skip the tails. You profit if the outcome lands anywhere in your range.</p>
+
+          <div class="strat-when">
+            <h4>When to Use</h4>
+            <ul class="feature-list">
+              <li>Market has 4 or more outcome brackets</li>
+              <li>Extreme brackets are overpriced by hype/fear</li>
+              <li>You expect outcome in the middle range</li>
+              <li>Sum of middle brackets is less than fair value</li>
+            </ul>
+          </div>
+
+          <div class="strat-numbers">
+            <div class="strat-num-row">
+              <span class="strat-num-label">Win Zone</span>
+              <span class="strat-num-value positive">~75% of market (middle brackets)</span>
+            </div>
+            <div class="strat-num-row">
+              <span class="strat-num-label">Max Loss</span>
+              <span class="strat-num-value negative">Total premium paid</span>
+            </div>
+            <div class="strat-num-row">
+              <span class="strat-num-label">Win Probability</span>
+              <span class="strat-num-value positive">High (wide range)</span>
+            </div>
+          </div>
+
+          <div class="strat-insight">
+            <div class="insight-label">Key Insight</div>
+            <p>A PM condor is a concentrated bet on 2-3 outcomes, not a true 4-leg options condor. The edge comes from retail overpricing the tails. "BTC hits $120K this month" at 8c is expensive when your model says 2%. Sell those tails, own the middle.</p>
+          </div>
+
+          <a href="./app/" class="btn-primary" style="margin-top: 28px;">
+            Model this in PolyStrike
+          </a>
+        </div>
+        <div class="strat-visual">
+          <div class="glass-card" style="padding: 20px;">
+            <div class="chart-header">
+              <span class="chart-title">Iron Condor P&L &mdash; Flat Middle</span>
+            </div>
+            <svg viewBox="0 0 360 180" class="mock-chart">
+              <!-- Grid -->
+              <line x1="0" y1="45" x2="360" y2="45" stroke="rgba(77,107,254,0.05)"/>
+              <line x1="0" y1="90" x2="360" y2="90" stroke="rgba(147,166,255,0.1)" stroke-dasharray="4 3"/>
+              <line x1="0" y1="135" x2="360" y2="135" stroke="rgba(77,107,254,0.05)"/>
+              <!-- Profit zone fill (middle) -->
+              <path d="M100,90 L100,45 L260,45 L260,90 Z" fill="rgba(34,197,94,0.05)"/>
+              <!-- Loss zone fills (tails) -->
+              <path d="M20,90 L20,140 L70,140 L100,90 Z" fill="rgba(239,68,68,0.04)"/>
+              <path d="M260,90 L290,140 L340,140 L340,90 Z" fill="rgba(239,68,68,0.04)"/>
+              <!-- Win zone bracket -->
+              <rect x="100" y="38" width="160" height="10" rx="3" fill="rgba(34,197,94,0.08)" stroke="rgba(34,197,94,0.15)" stroke-width="1"/>
+              <text x="145" y="46" fill="#22C55E" font-size="7" font-family="IBM Plex Mono">WIN ZONE ~75%</text>
+              <!-- Expiry P&L -->
+              <polyline points="20,140 50,140 70,140 100,45 130,45 180,45 230,45 260,45 290,140 320,140 340,140" fill="none" stroke="#22C55E" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/>
+              <!-- Now curve (smoother) -->
+              <polyline points="20,120 50,115 80,100 110,75 140,62 180,58 220,62 250,75 280,100 310,115 340,120" fill="none" stroke="#EF4444" stroke-width="1.5" stroke-linejoin="round" opacity="0.7"/>
+              <!-- Labels -->
+              <text x="20" y="155" fill="#EF4444" font-size="7" font-family="IBM Plex Mono">Tail loss</text>
+              <text x="290" y="155" fill="#EF4444" font-size="7" font-family="IBM Plex Mono">Tail loss</text>
+              <text x="20" y="175" fill="#5A6480" font-size="7" font-family="IBM Plex Mono">Extreme low</text>
+              <text x="155" y="175" fill="#8D98B8" font-size="7" font-family="IBM Plex Mono">Middle</text>
+              <text x="280" y="175" fill="#5A6480" font-size="7" font-family="IBM Plex Mono">Extreme high</text>
+            </svg>
+            <div class="chart-legend">
+              <span class="legend-item"><span class="swatch swatch-expiry"></span> At Resolution</span>
+              <span class="legend-item"><span class="swatch swatch-now"></span> Now</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STRATEGY 4: THE BUTTERFLY -->
+  <section class="section-glow" style="padding: 100px 0;">
+    <div class="container">
+      <div class="strat-block strat-block-reverse animate-on-scroll">
+        <div class="strat-content">
+          <span class="step-tool">04 &mdash; The Butterfly (Precision Bet)</span>
+          <h2>Concentrate on ONE bracket. Hedge with adjacent wings.</h2>
+          <p>High conviction on a specific outcome? Load up on that bracket, then buy small positions on adjacent brackets as insurance. If you hit the target, massive payout. If you miss slightly, the wings soften the blow.</p>
+
+          <div class="strat-when">
+            <h4>When to Use</h4>
+            <ul class="feature-list">
+              <li>HIGH conviction on a specific bracket outcome</li>
+              <li>Target bracket is cheap (15c-30c range)</li>
+              <li>Adjacent brackets provide reasonable insurance</li>
+              <li>Risk/reward of naked bet feels too binary</li>
+            </ul>
+          </div>
+
+          <div class="strat-numbers">
+            <div class="strat-num-row">
+              <span class="strat-num-label">Upside (target hit)</span>
+              <span class="strat-num-value positive">+135% or more</span>
+            </div>
+            <div class="strat-num-row">
+              <span class="strat-num-label">Downside (with wings)</span>
+              <span class="strat-num-value negative">-50% (vs -100% naked)</span>
+            </div>
+            <div class="strat-num-row">
+              <span class="strat-num-label">Best Entry Price</span>
+              <span class="strat-num-value">15c - 30c bracket</span>
+            </div>
+          </div>
+
+          <div class="strat-insight">
+            <div class="insight-label">Key Insight</div>
+            <p>The butterfly cuts your max loss in half while keeping most of the upside. A 25c bracket naked risks -100% for +300%. With wings, you risk -50% for +135%. The risk-adjusted return is dramatically better. Be precise, but be protected.</p>
+          </div>
+
+          <a href="./app/" class="btn-primary" style="margin-top: 28px;">
+            Model this in PolyStrike
+          </a>
+        </div>
+        <div class="strat-visual">
+          <div class="glass-card" style="padding: 20px;">
+            <div class="chart-header">
+              <span class="chart-title">Butterfly P&L &mdash; Precision Spike</span>
+            </div>
+            <svg viewBox="0 0 360 180" class="mock-chart">
+              <!-- Grid -->
+              <line x1="0" y1="30" x2="360" y2="30" stroke="rgba(77,107,254,0.05)"/>
+              <line x1="0" y1="90" x2="360" y2="90" stroke="rgba(147,166,255,0.1)" stroke-dasharray="4 3"/>
+              <line x1="0" y1="135" x2="360" y2="135" stroke="rgba(77,107,254,0.05)"/>
+              <!-- Target zone -->
+              <rect x="155" y="10" width="50" height="160" rx="4" fill="rgba(77,107,254,0.04)"/>
+              <text x="157" y="22" fill="#4D6BFE" font-size="7" font-family="IBM Plex Mono">TARGET</text>
+              <!-- Profit zone fill -->
+              <path d="M120,90 L155,90 L180,15 L205,90 L240,90 L240,115 L120,115 Z" fill="rgba(34,197,94,0.04)"/>
+              <!-- Expiry P&L (spike) -->
+              <polyline points="20,115 60,115 100,115 120,115 155,115 180,15 205,115 240,115 260,115 300,115 340,115" fill="none" stroke="#22C55E" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/>
+              <!-- Now curve (rounded peak) -->
+              <polyline points="20,108 60,105 100,98 130,88 155,72 180,50 205,72 230,88 260,98 300,105 340,108" fill="none" stroke="#EF4444" stroke-width="1.5" stroke-linejoin="round" opacity="0.7"/>
+              <!-- Naked loss comparison -->
+              <line x1="20" y1="155" x2="155" y2="155" stroke="rgba(239,68,68,0.2)" stroke-width="1" stroke-dasharray="3 3"/>
+              <text x="40" y="165" fill="#EF4444" font-size="6" font-family="IBM Plex Mono" opacity="0.5">Naked loss: -100%</text>
+              <!-- Labels -->
+              <text x="160" y="170" fill="#8D98B8" font-size="7" font-family="IBM Plex Mono">Target bracket</text>
+              <text x="165" y="12" fill="#22C55E" font-size="7" font-family="IBM Plex Mono">+135%</text>
+              <text x="5" y="120" fill="#EF4444" font-size="7" font-family="IBM Plex Mono">-50%</text>
+            </svg>
+            <div class="chart-legend">
+              <span class="legend-item"><span class="swatch swatch-expiry"></span> At Resolution</span>
+              <span class="legend-item"><span class="swatch swatch-now"></span> Now</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STRATEGY 5: THE ASYMMETRIC STRADDLE -->
+  <section class="section-darker" style="padding: 100px 0;">
+    <div class="container">
+      <div class="strat-block animate-on-scroll">
+        <div class="strat-content">
+          <span class="step-tool">05 &mdash; The Asymmetric Straddle <span style="font-size: 9px; color: var(--warning); margin-left: 8px;">POLYSTRIKE ORIGINAL</span></span>
+          <h2>Weight your straddle toward the side you think MORE likely.</h2>
+          <p>A pure straddle is 50/50. But what if you're 65% sure it's YES? Weight your position: 65% on YES, 35% on NO. You keep volatility protection, but juice the profitable side. Same total risk, higher expected value.</p>
+
+          <div class="strat-when">
+            <h4>When to Use</h4>
+            <ul class="feature-list">
+              <li>You have a directional view but aren't certain</li>
+              <li>Want straddle protection with a directional tilt</li>
+              <li>Market is near a catalyst but you lean one way</li>
+              <li>Want to size up while maintaining the same risk envelope</li>
+            </ul>
+          </div>
+
+          <div class="strat-numbers">
+            <div class="strat-num-row">
+              <span class="strat-num-label">Allocation Example</span>
+              <span class="strat-num-value">65% YES / 35% NO</span>
+            </div>
+            <div class="strat-num-row">
+              <span class="strat-num-label">If Correct Side Wins</span>
+              <span class="strat-num-value positive">Higher profit than pure straddle</span>
+            </div>
+            <div class="strat-num-row">
+              <span class="strat-num-label">If Wrong Side Wins</span>
+              <span class="strat-num-value warning">Still profitable (NO leg pays)</span>
+            </div>
+          </div>
+
+          <div class="strat-insight">
+            <div class="insight-label">Key Insight</div>
+            <p>The secret: you can size up with the same risk as a pure directional bet. A $100 naked YES bet risks $100. A $100 asymmetric straddle (65/35) risks less on the wrong side and profits more on the right side. Same capital, better risk-adjusted return.</p>
+          </div>
+
+          <a href="./app/" class="btn-primary" style="margin-top: 28px;">
+            Model this in PolyStrike
+          </a>
+        </div>
+        <div class="strat-visual">
+          <div class="glass-card" style="padding: 20px;">
+            <div class="chart-header">
+              <span class="chart-title">Asymmetric Straddle &mdash; Tilted V</span>
+              <span class="chart-status">Original</span>
+            </div>
+            <svg viewBox="0 0 360 180" class="mock-chart">
+              <!-- Grid -->
+              <line x1="0" y1="45" x2="360" y2="45" stroke="rgba(77,107,254,0.05)"/>
+              <line x1="0" y1="90" x2="360" y2="90" stroke="rgba(147,166,255,0.1)" stroke-dasharray="4 3"/>
+              <line x1="0" y1="135" x2="360" y2="135" stroke="rgba(77,107,254,0.05)"/>
+              <line x1="180" y1="10" x2="180" y2="165" stroke="rgba(147,166,255,0.06)" stroke-dasharray="2 3"/>
+              <!-- Profit zones -->
+              <path d="M20,90 L20,40 L90,58 L140,75 L170,86 L190,95 L190,90 Z" fill="rgba(34,197,94,0.04)"/>
+              <path d="M190,90 L190,95 L210,82 L260,55 L340,10 L340,90 Z" fill="rgba(34,197,94,0.06)"/>
+              <!-- Symmetric straddle (ghost) -->
+              <polyline points="20,22 60,38 100,56 140,74 160,84 180,92 200,84 220,74 260,56 300,38 340,22" fill="none" stroke="#93A6FF" stroke-width="1" stroke-linejoin="round" stroke-dasharray="4 4" opacity="0.3"/>
+              <!-- Asymmetric straddle (tilted V, heavier YES side) -->
+              <polyline points="20,40 60,52 100,66 140,78 160,86 180,92 190,95 200,88 220,72 260,48 300,25 340,10" fill="none" stroke="#22C55E" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round"/>
+              <!-- Now curve -->
+              <polyline points="20,65 60,70 100,76 140,83 160,88 180,92 200,88 220,80 260,68 300,55 340,42" fill="none" stroke="#EF4444" stroke-width="1.5" stroke-linejoin="round" opacity="0.7"/>
+              <!-- Labels -->
+              <text x="5" y="35" fill="#22C55E" font-size="7" font-family="IBM Plex Mono">NO wins</text>
+              <text x="300" y="8" fill="#22C55E" font-size="8" font-family="IBM Plex Mono">YES wins</text>
+              <text x="300" y="18" fill="#22C55E" font-size="7" font-family="IBM Plex Mono">(weighted)</text>
+              <text x="170" y="175" fill="#8D98B8" font-size="7" font-family="IBM Plex Mono">50/50</text>
+              <!-- Annotation arrow -->
+              <text x="85" y="30" fill="#93A6FF" font-size="6" font-family="IBM Plex Mono" opacity="0.5">Pure straddle</text>
+            </svg>
+            <div class="chart-legend">
+              <span class="legend-item"><span class="swatch swatch-expiry"></span> Asymmetric (65/35)</span>
+              <span class="legend-item"><span class="swatch" style="background: #93A6FF; opacity: 0.4;"></span> Pure 50/50</span>
+              <span class="legend-item"><span class="swatch swatch-now"></span> Now</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STRATEGY 6: THE CALENDAR PLAY -->
+  <section class="section-glow" style="padding: 100px 0;">
+    <div class="container">
+      <div class="strat-block strat-block-reverse animate-on-scroll">
+        <div class="strat-content">
+          <span class="step-tool">06 &mdash; The Calendar Play (Time-Based)</span>
+          <h2>Trade the same question across different timeframes.</h2>
+          <p>Polymarket often has the same question for different dates: "BTC hits $100K in March" and "BTC hits $100K in Q1". The shorter-dated market resolves first, giving you a free information event that reprices the longer-dated position.</p>
+
+          <div class="strat-when">
+            <h4>When to Use</h4>
+            <ul class="feature-list">
+              <li>Same underlying question exists for different time periods</li>
+              <li>Shorter market resolves before the longer one</li>
+              <li>Mispricing between the two timeframes</li>
+              <li>Want to use one resolution as a free signal for the other</li>
+            </ul>
+          </div>
+
+          <div class="strat-numbers">
+            <div class="strat-num-row">
+              <span class="strat-num-label">Structure</span>
+              <span class="strat-num-value">Long short-term + Long/Short long-term</span>
+            </div>
+            <div class="strat-num-row">
+              <span class="strat-num-label">Edge Source</span>
+              <span class="strat-num-value positive">Free information event</span>
+            </div>
+            <div class="strat-num-row">
+              <span class="strat-num-label">Time Horizon</span>
+              <span class="strat-num-value">Days to weeks</span>
+            </div>
+          </div>
+
+          <div class="strat-insight">
+            <div class="insight-label">Key Insight</div>
+            <p>Shorter resolution is a free information event. When the March market resolves NO, the Q1 market reprices instantly. If you're positioned correctly in both, the shorter market's resolution pays for your longer market's position adjustment. Time is the edge.</p>
+          </div>
+
+          <a href="./app/" class="btn-primary" style="margin-top: 28px;">
+            Model this in PolyStrike
+          </a>
+        </div>
+        <div class="strat-visual">
+          <div class="glass-card" style="padding: 20px;">
+            <div class="chart-header">
+              <span class="chart-title">Calendar Spread &mdash; Two Timeframes</span>
+            </div>
+            <svg viewBox="0 0 360 180" class="mock-chart">
+              <!-- Grid -->
+              <line x1="0" y1="45" x2="360" y2="45" stroke="rgba(77,107,254,0.05)"/>
+              <line x1="0" y1="90" x2="360" y2="90" stroke="rgba(147,166,255,0.1)" stroke-dasharray="4 3"/>
+              <line x1="0" y1="135" x2="360" y2="135" stroke="rgba(77,107,254,0.05)"/>
+              <!-- Timeline -->
+              <line x1="30" y1="155" x2="340" y2="155" stroke="rgba(147,166,255,0.15)" stroke-width="1"/>
+              <!-- Time markers -->
+              <circle cx="30" cy="155" r="3" fill="#4D6BFE"/>
+              <circle cx="140" cy="155" r="4" fill="#F59E0B" stroke="#F59E0B" stroke-width="1"/>
+              <circle cx="340" cy="155" r="4" fill="#22C55E" stroke="#22C55E" stroke-width="1"/>
+              <text x="15" y="170" fill="#5A6480" font-size="7" font-family="IBM Plex Mono">Now</text>
+              <text x="110" y="170" fill="#F59E0B" font-size="7" font-family="IBM Plex Mono">Mar resolves</text>
+              <text x="305" y="170" fill="#22C55E" font-size="7" font-family="IBM Plex Mono">Q1 resolves</text>
+              <!-- Short-dated market price line -->
+              <polyline points="30,65 50,62 70,68 90,55 110,50 130,35 140,10" fill="none" stroke="#F59E0B" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+              <text x="145" y="15" fill="#F59E0B" font-size="7" font-family="IBM Plex Mono">$1.00</text>
+              <!-- Long-dated market price line -->
+              <polyline points="30,70 50,68 70,72 90,62 110,58 130,52 140,48 160,42 190,40 220,38 260,35 300,30 340,10" fill="none" stroke="#22C55E" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+              <!-- Information event flash -->
+              <line x1="140" y1="10" x2="140" y2="145" stroke="rgba(245,158,11,0.25)" stroke-width="1.5" stroke-dasharray="3 3"/>
+              <rect x="105" y="80" width="70" height="18" rx="4" fill="rgba(245,158,11,0.1)" stroke="rgba(245,158,11,0.2)" stroke-width="1"/>
+              <text x="110" y="92" fill="#F59E0B" font-size="7" font-family="IBM Plex Mono">FREE SIGNAL</text>
+              <!-- Combined P&L area -->
+              <path d="M30,90 L50,88 L70,90 L90,82 L110,78 L130,68 L140,55 L160,50 L190,48 L220,45 L260,40 L300,32 L340,20 L340,90 Z" fill="rgba(34,197,94,0.04)"/>
+              <!-- Labels -->
+              <text x="5" y="62" fill="#F59E0B" font-size="7" font-family="IBM Plex Mono">March</text>
+              <text x="305" y="25" fill="#22C55E" font-size="7" font-family="IBM Plex Mono">Q1</text>
+            </svg>
+            <div class="chart-legend">
+              <span class="legend-item"><span class="swatch swatch-expiry"></span> Long-dated (Q1)</span>
+              <span class="legend-item"><span class="swatch swatch-mid"></span> Short-dated (Mar)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="final-cta-section">
+    <div class="container">
+      <h2 class="animate-on-scroll">Model any strategy before you trade it.</h2>
+      <p class="final-cta-sub animate-on-scroll delay-1">Open the Position Hedger. Build multi-leg constructions. See combined P&L across time. Free, no signup.</p>
+      <div class="final-cta-buttons animate-on-scroll delay-2">
+        <a href="./app/" class="btn-primary">Launch App</a>
+        <a href="features.html" class="btn-secondary">Explore Features &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-grid">
+        <div class="footer-brand-col">
+          <a href="index.html" class="logo">PolyStrike</a>
+          <p>Risk infrastructure for prediction markets. Analytical tools for modeling payoff strategies.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Product</h4>
+          <a href="features.html">Features</a>
+          <a href="strategies.html">Strategies</a>
+          <a href="docs.html">Documentation</a>
+        </div>
+        <div class="footer-col">
+          <h4>Tools</h4>
+          <a href="./backtester/">Backtester</a>
+          <a href="./builder/">Builder</a>
+          <a href="./app/">Hedger</a>
+          <a href="./designer/">Designer</a>
+          <a href="./auto-hedger/">Auto-Hedger</a>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <a href="about.html">About</a>
+          <a href="https://x.com/MykytaHaida" target="_blank">Twitter</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span class="footer-copy">shtanga0x + mykytahaida &middot; Built for serious traders.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+
+  <!-- Page-specific styles -->
+  <style>
+    /* Strategy block layout (mirroring tool-feature from features.html) */
+    .strat-block {
+      display: grid;
+      grid-template-columns: 1fr 1.1fr;
+      gap: 56px;
+      align-items: start;
+    }
+
+    .strat-block-reverse {
+      direction: rtl;
+    }
+
+    .strat-block-reverse > * {
+      direction: ltr;
+    }
+
+    .strat-content .step-tool {
+      display: inline-block;
+      margin-bottom: 20px;
+    }
+
+    .strat-content h2 {
+      margin-bottom: 16px;
+    }
+
+    .strat-content > p {
+      font-size: 16px;
+      color: var(--text-muted);
+      line-height: 1.75;
+      margin-bottom: 28px;
+    }
+
+    /* When to Use section */
+    .strat-when {
+      margin-bottom: 28px;
+    }
+
+    .strat-when h4 {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      color: var(--primary);
+      margin-bottom: 12px;
+    }
+
+    .strat-when .feature-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    .strat-when .feature-list li {
+      font-size: 14px;
+      color: var(--text-dim);
+      padding: 6px 0 6px 24px;
+      position: relative;
+      line-height: 1.6;
+    }
+
+    .strat-when .feature-list li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 12px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: rgba(77,107,254,0.3);
+      border: 1px solid rgba(77,107,254,0.5);
+    }
+
+    /* Key numbers */
+    .strat-numbers {
+      background: rgba(147, 166, 255, 0.03);
+      border: 1px solid rgba(147, 166, 255, 0.08);
+      border-radius: var(--radius-md);
+      padding: 20px 24px;
+      margin-bottom: 24px;
+    }
+
+    .strat-num-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 0;
+      border-bottom: 1px solid rgba(77, 107, 254, 0.06);
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 13px;
+    }
+
+    .strat-num-row:last-child {
+      border-bottom: none;
+    }
+
+    .strat-num-label {
+      color: var(--text-dim);
+    }
+
+    .strat-num-value {
+      color: var(--text-muted);
+      font-weight: 500;
+    }
+
+    .strat-num-value.positive {
+      color: var(--success);
+    }
+
+    .strat-num-value.negative {
+      color: var(--error);
+    }
+
+    .strat-num-value.warning {
+      color: var(--warning);
+    }
+
+    /* Key Insight callout */
+    .strat-insight {
+      background: linear-gradient(135deg, rgba(77, 107, 254, 0.07), rgba(125, 211, 252, 0.03));
+      border: 1px solid rgba(147, 166, 255, 0.12);
+      border-radius: var(--radius-md);
+      padding: 20px 24px;
+      box-shadow: 0 8px 28px rgba(2, 6, 23, 0.3);
+    }
+
+    .strat-insight .insight-label {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 10px;
+      color: var(--primary);
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      margin-bottom: 10px;
+    }
+
+    .strat-insight p {
+      font-size: 14px;
+      color: var(--text-muted);
+      line-height: 1.75;
+    }
+
+    /* Visual column sticky behavior */
+    .strat-visual {
+      position: sticky;
+      top: 80px;
+    }
+
+    /* Responsive */
+    @media (max-width: 900px) {
+      .strat-block,
+      .strat-block-reverse {
+        grid-template-columns: 1fr;
+        gap: 32px;
+        direction: ltr;
+      }
+
+      .strat-visual {
+        position: static;
+      }
+    }
+  </style>
+</body>
+</html>
