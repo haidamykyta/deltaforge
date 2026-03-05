@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PolyStrike - Polymarket + Bybit P&L Visualizer</title>
-  <meta name="description" content="Build hedged positions combining Polymarket binary options with Bybit vanilla options. See combined P&L across 4 time snapshots. Free analytical tool.">
-  <meta property="og:title" content="PolyStrike - Build hedged positions. See combined P&L.">
-  <meta property="og:description" content="Combine Polymarket binary options with Bybit vanilla options. Multi-leg portfolios, 4 time snapshots, Black-Scholes pricing.">
+  <title>PolyStrike - Polymarket Analytics Platform</title>
+  <meta name="description" content="Analyze Polymarket positions with real price history and P&L projections. Free analytical tools for prediction market traders.">
+  <meta property="og:title" content="PolyStrike - Polymarket Analytics Platform">
+  <meta property="og:description" content="Backtest prediction markets with crypto overlays. Model position P&L across time. Free tools for serious traders.">
   <meta property="og:type" content="website">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -44,7 +44,7 @@
       </div>
       <div class="nav-links">
         <a href="features.html" class="nav-link">Features</a>
-        <a href="strategies.html" class="nav-link">Strategies</a>
+        <!-- strategies removed -->
         <a href="docs.html" class="nav-link">Docs</a>
         <a href="about.html" class="nav-link">About</a>
         <a href="./backtester/" class="nav-cta">Try Backtester</a>
@@ -59,9 +59,9 @@
   <section class="hero">
     <div class="container">
       <div class="hero-content">
-        <div class="tag-chip">Polymarket + Bybit Options</div>
-        <h1>Build hedged positions.<br>See combined P&L.</h1>
-        <p class="hero-sub">Add Polymarket YES/NO positions. Browse the full Bybit BTC option chain. See combined payoff across 4 time snapshots. Save your construction as JSON.</p>
+        <div class="tag-chip">Polymarket Analytics</div>
+        <h1>Backtest markets.<br>Model positions.</h1>
+        <p class="hero-sub">Replay any Polymarket event with real price history. Overlay crypto prices. Project P&L across time with 4 snapshots. Export as JPG.</p>
         <div class="hero-ctas">
           <a href="./backtester/" class="btn-primary">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
@@ -70,72 +70,33 @@
           <a href="#how-it-works" class="btn-secondary">How It Works</a>
         </div>
         <div class="hero-chips">
-          <span class="chip">Black-Scholes</span>
+          <span class="chip">Real Price History</span>
           <span class="chip">4 Time Snapshots</span>
-          <span class="chip">JSON Export</span>
+          <span class="chip">Crypto Overlay</span>
         </div>
       </div>
       <div class="hero-visual">
-        <div class="hero-table">
-          <div class="table-header">
-            <span>BTC Options &mdash; Bybit</span>
-            <span class="table-expiry">Mar 28</span>
+        <div class="glass-card" style="padding: 20px;">
+          <div class="chart-header">
+            <span class="chart-title">YES/NO Price History + BTC Overlay</span>
           </div>
-          <table>
-            <thead>
-              <tr>
-                <th>Strike</th>
-                <th>Bid</th>
-                <th>Ask</th>
-                <th>Mid</th>
-                <th>Delta</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>88,000</td>
-                <td>4,120</td>
-                <td>4,380</td>
-                <td>4,250</td>
-                <td class="delta-pos">0.72</td>
-              </tr>
-              <tr>
-                <td>90,000</td>
-                <td>2,840</td>
-                <td>3,100</td>
-                <td>2,970</td>
-                <td class="delta-pos">0.61</td>
-              </tr>
-              <tr class="row-active">
-                <td>92,000</td>
-                <td>1,680</td>
-                <td>1,920</td>
-                <td>1,800</td>
-                <td class="delta-pos">0.48</td>
-              </tr>
-              <tr>
-                <td>94,000</td>
-                <td>890</td>
-                <td>1,100</td>
-                <td>995</td>
-                <td class="delta-pos">0.34</td>
-              </tr>
-              <tr>
-                <td>96,000</td>
-                <td>410</td>
-                <td>580</td>
-                <td>495</td>
-                <td class="delta-pos">0.21</td>
-              </tr>
-              <tr>
-                <td>98,000</td>
-                <td>150</td>
-                <td>280</td>
-                <td>215</td>
-                <td class="delta-pos">0.11</td>
-              </tr>
-            </tbody>
-          </table>
+          <svg viewBox="0 0 360 150" class="mock-chart">
+            <line x1="0" y1="40" x2="360" y2="40" stroke="rgba(77,107,254,0.05)"/>
+            <line x1="0" y1="75" x2="360" y2="75" stroke="rgba(77,107,254,0.05)"/>
+            <line x1="0" y1="110" x2="360" y2="110" stroke="rgba(77,107,254,0.05)"/>
+            <!-- YES line (blue) -->
+            <polyline points="20,120 50,115 80,100 110,95 140,85 170,60 200,45 230,55 260,70 290,80 320,65 340,30" fill="none" stroke="#4D6BFE" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+            <!-- NO line (dashed) -->
+            <polyline points="20,30 50,35 80,50 110,55 140,65 170,90 200,105 230,95 260,80 290,70 320,85 340,120" fill="none" stroke="#93A6FF" stroke-width="1.5" stroke-dasharray="5 3" stroke-linejoin="round" opacity="0.7"/>
+            <!-- BTC overlay (cyan) -->
+            <polyline points="20,90 50,85 80,75 110,80 140,70 170,50 200,40 230,45 260,55 290,60 320,50 340,35" fill="none" stroke="#7DD3FC" stroke-width="1.2" stroke-linejoin="round" opacity="0.5"/>
+            <text x="5" y="35" fill="#4D6BFE" font-size="7" font-family="IBM Plex Mono">YES</text>
+            <text x="5" y="125" fill="#93A6FF" font-size="7" font-family="IBM Plex Mono">NO</text>
+            <text x="310" y="30" fill="#7DD3FC" font-size="7" font-family="IBM Plex Mono">BTC</text>
+            <text x="20" y="145" fill="#5A6480" font-size="7" font-family="IBM Plex Mono">Jan 1</text>
+            <text x="170" y="145" fill="#5A6480" font-size="7" font-family="IBM Plex Mono">Jan 15</text>
+            <text x="310" y="145" fill="#5A6480" font-size="7" font-family="IBM Plex Mono">Jan 31</text>
+          </svg>
         </div>
       </div>
     </div>
@@ -145,15 +106,15 @@
   <section class="statement-section">
     <div class="statement-inner">
       <div class="statement-card animate-on-scroll">
-        <p class="statement">A naked PM bet is a coin flip. A hedged position is a trade.</p>
+        <p class="statement">Most traders guess. The best ones backtest and model first.</p>
         <div class="features-inline">
-          <span>Full option chain</span>
+          <span>Real price history</span>
           <span class="dot">&middot;</span>
-          <span>Combined P&L</span>
+          <span>P&L projections</span>
           <span class="dot">&middot;</span>
           <span>4 time snapshots</span>
           <span class="dot">&middot;</span>
-          <span>JSON snapshots</span>
+          <span>Crypto overlay</span>
         </div>
       </div>
     </div>
@@ -163,47 +124,47 @@
   <section class="timeline-section" id="how-it-works">
     <div class="container">
       <div class="section-header animate-on-scroll">
-        <h2>Paste a URL. See the payoff.</h2>
-        <p>Four steps from a Polymarket link to a full multi-leg construction with combined P&L.</p>
+        <h2>Paste a URL. See the data.</h2>
+        <p>Three steps from a Polymarket link to full analytics.</p>
       </div>
       <div class="timeline animate-on-scroll">
         <div class="timeline-stage">
           <div class="stage-marker">1</div>
           <div>
             <div class="stage-title">Paste URL</div>
-            <div class="stage-desc">Drop a Polymarket event URL. Auto-detect crypto, option type, spot price.</div>
+            <div class="stage-desc">Drop a Polymarket event URL. Auto-detect crypto asset, market type, spot price.</div>
           </div>
         </div>
         <div class="timeline-stage">
           <div class="stage-marker">2</div>
           <div>
-            <div class="stage-title">Load Chain</div>
-            <div class="stage-desc">Browse Bybit BTC options. Select expiry. See bid, ask, delta for every strike.</div>
+            <div class="stage-title">Select Positions</div>
+            <div class="stage-desc">Pick YES/NO positions across multiple strikes. Choose crypto overlay (BTC, ETH, SOL).</div>
           </div>
         </div>
         <div class="timeline-stage">
           <div class="stage-marker">3</div>
           <div>
-            <div class="stage-title">Build Position</div>
-            <div class="stage-desc">Pick PM strikes (YES/NO). Add Bybit options (buy/sell). Set quantities.</div>
+            <div class="stage-title">Analyze</div>
+            <div class="stage-desc">See price history, P&L curves, time decay across 4 snapshots. Compare strikes.</div>
           </div>
         </div>
         <div class="timeline-stage">
           <div class="stage-marker">4</div>
           <div>
-            <div class="stage-title">See Payoff</div>
-            <div class="stage-desc">Combined P&L chart with 4 time snapshots. Price range slider. Export JSON + JPG.</div>
+            <div class="stage-title">Export</div>
+            <div class="stage-desc">Download P&L snapshots as JPG. Save your analysis. Share with your team.</div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ===== 4. WHY HEDGE (3 cards) ===== -->
+  <!-- ===== 4. WHY ANALYZE (3 cards) ===== -->
   <section class="why-section">
     <div class="container">
       <div class="section-header animate-on-scroll">
-        <h2>Why hedge a prediction market bet?</h2>
+        <h2>Why analyze before you bet?</h2>
       </div>
       <div class="why-grid">
         <div class="why-card animate-on-scroll delay-1">
@@ -224,8 +185,8 @@
           <div class="card-icon">
             <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
           </div>
-          <h3>Bounded Loss</h3>
-          <p>Add one Bybit vanilla option. Max drawdown drops from -100% to -25%. Time decay converts temporary drawdown into profit by expiry.</p>
+          <h3>P&L Visibility</h3>
+          <p>See exactly what happens to your position across the full crypto price range. Know your breakeven, max gain, and worst case before you commit capital.</p>
         </div>
       </div>
     </div>
@@ -235,39 +196,39 @@
   <section class="example-section section-glow">
     <div class="container">
       <div class="section-header animate-on-scroll">
-        <h2>Real example: BTC not hitting $85K this month.</h2>
+        <h2>Real example: BTC weekly strikes analysis.</h2>
       </div>
       <div class="example-grid">
         <div class="glass-card example-meta animate-on-scroll delay-1">
-          <div class="meta-title">Construction Details</div>
+          <div class="meta-title">Position Details</div>
           <div class="meta-row">
-            <span class="meta-label">PM Position</span>
-            <span class="meta-value">NO on "BTC hits $85K"</span>
+            <span class="meta-label">Event</span>
+            <span class="meta-value">BTC weekly crypto strikes</span>
           </div>
           <div class="meta-row">
-            <span class="meta-label">Bybit Hedge</span>
-            <span class="meta-value">Long Call + Short Call spread</span>
+            <span class="meta-label">Position</span>
+            <span class="meta-value">NO on "$85K" + YES on "$76K"</span>
           </div>
           <div class="meta-row">
             <span class="meta-label">Expiry</span>
-            <span class="meta-value">Mar 27 (Bybit) / Apr 1 (PM)</span>
+            <span class="meta-value">Apr 1 (PM)</span>
           </div>
           <div class="meta-row">
-            <span class="meta-label">Max Drawdown</span>
-            <span class="meta-value">-25% (vs -100% naked)</span>
+            <span class="meta-label">Breakeven</span>
+            <span class="meta-value">$73K - $86K range</span>
           </div>
           <div class="meta-row">
-            <span class="meta-label">Flat Zone</span>
-            <span class="meta-value">$63K - $75K (stop: -2%)</span>
+            <span class="meta-label">Max Loss</span>
+            <span class="meta-value">-$45 (bounded)</span>
           </div>
           <div class="meta-row">
-            <span class="meta-label">Profit at Expiry</span>
-            <span class="meta-value positive">+4% to +26%</span>
+            <span class="meta-label">Max Profit</span>
+            <span class="meta-value positive">+$120 at expiry</span>
           </div>
         </div>
         <div class="glass-card example-chart-wrap animate-on-scroll delay-2">
           <div class="chart-header">
-            <span class="chart-title">P&L vs BTC Price Movement</span>
+            <span class="chart-title">P&L vs BTC Price Range</span>
           </div>
           <svg viewBox="0 0 380 170" class="mock-chart">
             <!-- Grid -->
@@ -304,7 +265,7 @@
       </div>
       <div class="example-insight animate-on-scroll delay-3">
         <div class="insight-label">Key Insight</div>
-        <p>The red curve (now) shows a temporary drawdown of -12% for extreme moves. Time decay converts this into profit: by expiry, the entire range from $55K to $85K is profitable. Your worst case is -2% in the flat zone. That's what hedging does.</p>
+        <p>The red curve (now) shows current P&L. As time passes, the green expiry curve shows your final outcome. The Builder lets you model this before committing capital. See exactly where you profit and where you lose.</p>
       </div>
     </div>
   </section>
@@ -312,8 +273,8 @@
   <!-- ===== 6. FINAL CTA ===== -->
   <section class="final-cta-section">
     <div class="container">
-      <h2 class="animate-on-scroll">Stop taking naked bets.</h2>
-      <p class="final-cta-sub animate-on-scroll delay-1">Build hedged constructions. See combined P&L across time. Trade with bounded risk.</p>
+      <h2 class="animate-on-scroll">Stop guessing. Start analyzing.</h2>
+      <p class="final-cta-sub animate-on-scroll delay-1">Backtest any market. Model your P&L. Know your risk before you trade.</p>
       <div class="final-cta-buttons animate-on-scroll delay-2">
         <a href="./backtester/" class="btn-primary">Try Backtester</a>
         <a href="docs.html" class="btn-secondary">Read the Docs</a>
@@ -332,9 +293,9 @@
         <div class="footer-col">
           <h4>Product</h4>
           <a href="features.html">Features</a>
-          <a href="strategies.html">Strategies</a>
           <a href="docs.html">Documentation</a>
           <a href="./backtester/">Backtester</a>
+          <a href="./builder/">Builder</a>
         </div>
         <div class="footer-col">
           <h4>Resources</h4>

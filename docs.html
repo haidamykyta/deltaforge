@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Documentation - PolyStrike</title>
-  <meta name="description" content="Learn PolyStrike in 3 minutes. Quick start guide, FAQ, and glossary for prediction market risk management tools.">
+  <meta name="description" content="Learn PolyStrike in 3 minutes. Quick start guide, FAQ, and glossary for prediction market analytics tools.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
@@ -35,7 +35,7 @@
       </div>
       <div class="nav-links">
         <a href="features.html" class="nav-link">Features</a>
-        <a href="strategies.html" class="nav-link">Strategies</a>
+        <!-- strategies removed -->
         <a href="docs.html" class="nav-link active">Docs</a>
         <a href="about.html" class="nav-link">About</a>
         <a href="./backtester/" class="nav-cta">Try Backtester</a>
@@ -88,8 +88,8 @@
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
           </div>
           <div class="qs-number">03</div>
-          <h3>Add Bybit Options</h3>
-          <p>Pick options from the Bybit chain. The combined P&L chart updates instantly &mdash; see your max loss, profit zones, and time curves.</p>
+          <h3>Model Your Position</h3>
+          <p>Open the Builder for crypto events. Pick strikes, see P&L curves across 4 time snapshots. Export as JPG.</p>
         </div>
       </div>
     </div>
@@ -111,27 +111,17 @@
             <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
           </summary>
           <div class="faq-answer">
-            <p>PolyStrike is a suite of analytical tools for managing risk on prediction markets. It helps you model payoff scenarios, backtest positions, and find optimal hedges. No trading, no custody &mdash; just math and visualization.</p>
+            <p>PolyStrike is a suite of analytical tools for prediction markets. It helps you backtest positions, model P&L scenarios, and analyze risk before trading. No trading, no custody &mdash; just data and visualization.</p>
           </div>
         </details>
 
         <details class="faq-item">
           <summary class="faq-question">
-            <span>How does hedging work?</span>
+            <span>What does the Builder do?</span>
             <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
           </summary>
           <div class="faq-answer">
-            <p>You buy a NO position on Polymarket and pair it with a vanilla option on Bybit. The combined P&L reduces your maximum loss. If BTC moves against your PM position, the Bybit option offsets part of the damage.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What's Black-Scholes?</span>
-            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
-          </summary>
-          <div class="faq-answer">
-            <p>Black-Scholes is a mathematical model for pricing options. PolyStrike adapts it for Polymarket binary options &mdash; it estimates what a PM position "should" cost given time to expiry, volatility, and the underlying asset price.</p>
+            <p>The Builder takes a Polymarket crypto event and lets you pick positions across multiple strikes. It then projects your P&L across the full crypto price range at 4 time snapshots: now, 1/3 to expiry, 2/3, and at expiry.</p>
           </div>
         </details>
 
@@ -151,7 +141,7 @@
             <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
           </summary>
           <div class="faq-answer">
-            <p>Polymarket for prediction market positions (YES/NO binary options) and Bybit for BTC vanilla options (calls and puts). The tools pull live data from both platforms.</p>
+            <p>Polymarket for prediction market positions (YES/NO pricing and history) and Binance for crypto spot prices (BTC, ETH, SOL, XRP). All data is pulled live.</p>
           </div>
         </details>
 
@@ -161,17 +151,7 @@
             <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
           </summary>
           <div class="faq-answer">
-            <p>The tools help you analyze and understand risk &mdash; they don't eliminate it. You still execute trades manually on Polymarket and Bybit. This is NOT a money button. Use the tools to model scenarios before you commit capital.</p>
-          </div>
-        </details>
-
-        <details class="faq-item">
-          <summary class="faq-question">
-            <span>What's a "construction"?</span>
-            <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
-          </summary>
-          <div class="faq-answer">
-            <p>A construction is a multi-leg position that combines PM binary options with Bybit vanilla options. By layering different instruments, you create a defined-risk profile &mdash; you know your max loss and profit zones before entering.</p>
+            <p>The tools help you analyze and understand risk &mdash; they don't eliminate it. You still execute trades manually on Polymarket. This is NOT a money button. Use the tools to model scenarios before you commit capital.</p>
           </div>
         </details>
 
@@ -181,7 +161,7 @@
             <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
           </summary>
           <div class="faq-answer">
-            <p>The P&L chart shows 4 lines: Now, +7 days, +14 days, and At Expiry. As time passes, options lose value (theta decay). The curves show how your position evolves &mdash; time decay is your friend when you're selling premium.</p>
+            <p>The P&L chart shows 4 lines: Now, 1/3 to expiry, 2/3, and At Expiry. As time passes, positions change value. The curves show how your P&L evolves across the crypto price range at each point in time.</p>
           </div>
         </details>
 
@@ -191,7 +171,7 @@
             <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
           </summary>
           <div class="faq-answer">
-            <p>The flat top is the price range on the P&L chart where your maximum loss is minimal (around -2%). A wider flat top means a better hedge &mdash; BTC can move within that range without hurting your position.</p>
+            <p>The flat zone is the price range on the P&L chart where your position stays near breakeven. A wider flat zone means the underlying crypto can move within that range without significant impact on your position.</p>
           </div>
         </details>
 
@@ -201,7 +181,7 @@
             <svg class="faq-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
           </summary>
           <div class="faq-answer">
-            <p>shtanga0x (developer) and mykytahaida (strategy &amp; research). 1.5 years of development, from concept to 5 production tools. Built for traders who take risk seriously.</p>
+            <p>shtanga0x (developer) and mykytahaida (strategy &amp; research). 1.5 years of development. Built for traders who take risk seriously.</p>
           </div>
         </details>
 
@@ -220,33 +200,33 @@
       <div class="glossary-grid animate-on-scroll delay-1">
 
         <div class="glossary-card glass-card">
-          <h4>Binary Option</h4>
-          <p>A contract that pays out a fixed amount (e.g. $1) if a condition is met, or $0 if not. Polymarket positions are binary options.</p>
+          <h4>Binary Market</h4>
+          <p>A market that pays out $1 if a condition is met, or $0 if not. All Polymarket positions work this way: YES pays $1 if true, NO pays $1 if false.</p>
         </div>
 
         <div class="glossary-card glass-card">
-          <h4>Strike Price</h4>
-          <p>The price level at which an option becomes profitable. For BTC options: the target BTC price. For PM: the YES/NO threshold.</p>
+          <h4>Strike / Bracket</h4>
+          <p>The price threshold in a crypto event. For "BTC above $85K", $85K is the strike. Each bracket is a separate market you can trade.</p>
         </div>
 
         <div class="glossary-card glass-card">
           <h4>IV (Implied Volatility)</h4>
-          <p>How much the market expects the price to move. Higher IV means options cost more because bigger swings are expected.</p>
+          <p>How much the market expects the price to move. Higher IV means positions are priced higher because bigger swings are expected.</p>
         </div>
 
         <div class="glossary-card glass-card">
-          <h4>Theta (Time Decay)</h4>
-          <p>Options lose value as they approach expiry. Theta measures how much value is lost per day. Sellers benefit, buyers pay for it.</p>
+          <h4>Time Decay</h4>
+          <p>Positions lose value as they approach expiry. A YES at $0.50 today may drop to $0.30 tomorrow if the underlying hasn't moved. The Builder shows this visually.</p>
         </div>
 
         <div class="glossary-card glass-card">
-          <h4>Delta</h4>
-          <p>How much an option's price moves when the underlying asset moves $1. Delta 0.5 means the option moves 50 cents per $1 of BTC movement.</p>
+          <h4>Spot Price</h4>
+          <p>The current market price of the underlying crypto asset (BTC, ETH, SOL). Pulled live from Binance.</p>
         </div>
 
         <div class="glossary-card glass-card">
-          <h4>Construction</h4>
-          <p>A multi-leg position combining PM binary options with Bybit vanilla options to create a specific risk/reward profile.</p>
+          <h4>Portfolio</h4>
+          <p>A combination of multiple PM positions across different strikes. The Builder shows the combined P&L of your entire portfolio.</p>
         </div>
 
         <div class="glossary-card glass-card">
@@ -255,13 +235,8 @@
         </div>
 
         <div class="glossary-card glass-card">
-          <h4>Spread</h4>
-          <p>A position with two options at different strikes. Limits both your max profit and max loss. Used in Auto-Hedger for defined-risk setups.</p>
-        </div>
-
-        <div class="glossary-card glass-card">
-          <h4>Straddle</h4>
-          <p>Buying both a call and a put at the same strike. Profits when BTC makes a big move in either direction.</p>
+          <h4>Bracket</h4>
+          <p>A price range in a PM event (e.g. "BTC between $80K-$85K"). Each bracket is a separate YES/NO market you can trade.</p>
         </div>
 
         <div class="glossary-card glass-card">
@@ -270,8 +245,8 @@
         </div>
 
         <div class="glossary-card glass-card">
-          <h4>Flat Top Zone</h4>
-          <p>The price range on a P&L chart where your loss stays minimal (around -2%). A wider flat top means a more effective hedge.</p>
+          <h4>Flat Zone</h4>
+          <p>The price range on a P&L chart where your position stays near breakeven. A wider flat zone means less sensitivity to price movement.</p>
         </div>
 
       </div>
@@ -301,13 +276,12 @@
         <div class="footer-col">
           <h4>Product</h4>
           <a href="features.html">Features</a>
-          <a href="strategies.html">Strategies</a>
           <a href="docs.html">Documentation</a>
         </div>
         <div class="footer-col">
           <h4>Tools</h4>
           <a href="./backtester/">Backtester</a>
-          <a href="./auto-hedger/">Auto-Hedger</a>
+          <a href="./builder/">Builder</a>
         </div>
         <div class="footer-col">
           <h4>Company</h4>
