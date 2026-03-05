@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Features - PolyStrike</title>
-  <meta name="description" content="3 analytical tools in one platform: Backtester, Designer, Auto-Hedger. Options-style risk management for Polymarket.">
+  <meta name="description" content="2 analytical tools in one platform: Backtester and Auto-Hedger. Options-style risk management for Polymarket.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
@@ -51,7 +51,7 @@
   <section class="hero" style="padding: 100px 0 60px;">
     <div class="container">
       <div class="section-header animate-on-scroll" style="margin-bottom: 0;">
-        <div class="tag-chip">3 Tools. One Platform.</div>
+        <div class="tag-chip">2 Tools. One Platform.</div>
         <h1 style="max-width: 700px; margin: 0 auto 20px;">Every tool you need to analyze prediction markets.</h1>
         <p style="max-width: 600px; margin: 0 auto; font-size: 17px; color: var(--text-muted); line-height: 1.75;">From historical replay to auto-optimized multi-leg constructions. Each calculator builds on the previous one.</p>
       </div>
@@ -104,68 +104,12 @@
     </div>
   </section>
 
-  <!-- TOOL 2: DESIGNER -->
+  <!-- TOOL 2: AUTO-HEDGER -->
   <section class="section-glow" style="padding: 100px 0;">
-    <div class="container">
-      <div class="tool-feature tool-feature-reverse animate-on-scroll">
-        <div class="tool-feature-content">
-          <span class="step-tool">02 &mdash; Position Designer</span>
-          <h2>Auto-find the best hedge for each PM position.</h2>
-          <p>Paste your PM NO position. The optimizer scans every available Bybit option and finds the single best hedge for 3 volatility scenarios.</p>
-          <ul class="feature-list">
-            <li>3 optimization columns: +/-1%, +/-10%, +/-20% ranges</li>
-            <li>Average expected profit for each volatility scenario</li>
-            <li>Results table with best hedge per strike</li>
-            <li>Cross-link results for detailed inspection</li>
-          </ul>
-          <a href="./designer/" class="btn-primary" style="margin-top: 24px;">
-            Try Designer
-          </a>
-        </div>
-        <div class="tool-feature-visual">
-          <div class="glass-card" style="padding: 20px;">
-            <div class="chart-header">
-              <span class="chart-title">Optimization Results</span>
-            </div>
-            <!-- Mock table -->
-            <div style="font-family: 'IBM Plex Mono', monospace; font-size: 11px;">
-              <div style="display: grid; grid-template-columns: 1.2fr 1fr 1fr 1fr; gap: 1px; margin-top: 12px;">
-                <div style="padding: 8px 10px; color: var(--text-dim); text-transform: uppercase; font-size: 9px; letter-spacing: 1px;">Strike</div>
-                <div style="padding: 8px 10px; color: var(--text-dim); text-transform: uppercase; font-size: 9px; letter-spacing: 1px; text-align: right;">+/-1%</div>
-                <div style="padding: 8px 10px; color: var(--text-dim); text-transform: uppercase; font-size: 9px; letter-spacing: 1px; text-align: right;">+/-10%</div>
-                <div style="padding: 8px 10px; color: var(--text-dim); text-transform: uppercase; font-size: 9px; letter-spacing: 1px; text-align: right;">+/-20%</div>
-              </div>
-              <div style="display: grid; grid-template-columns: 1.2fr 1fr 1fr 1fr; gap: 1px; background: rgba(77,107,254,0.04); border-radius: 8px; margin-bottom: 4px;">
-                <div style="padding: 10px; color: var(--text-muted);">BTC 85K Call</div>
-                <div style="padding: 10px; color: var(--success); text-align: right;">+8.2%</div>
-                <div style="padding: 10px; color: var(--success); text-align: right;">+4.1%</div>
-                <div style="padding: 10px; color: var(--warning); text-align: right;">+1.8%</div>
-              </div>
-              <div style="display: grid; grid-template-columns: 1.2fr 1fr 1fr 1fr; gap: 1px; background: rgba(77,107,254,0.02); border-radius: 8px; margin-bottom: 4px;">
-                <div style="padding: 10px; color: var(--text-muted);">BTC 90K Call</div>
-                <div style="padding: 10px; color: var(--success); text-align: right;">+6.5%</div>
-                <div style="padding: 10px; color: var(--success); text-align: right;">+5.2%</div>
-                <div style="padding: 10px; color: var(--success); text-align: right;">+3.1%</div>
-              </div>
-              <div style="display: grid; grid-template-columns: 1.2fr 1fr 1fr 1fr; gap: 1px; background: rgba(77,107,254,0.04); border-radius: 8px;">
-                <div style="padding: 10px; color: var(--text-muted);">BTC 95K Call</div>
-                <div style="padding: 10px; color: var(--success); text-align: right;">+3.8%</div>
-                <div style="padding: 10px; color: var(--success); text-align: right;">+6.7%</div>
-                <div style="padding: 10px; color: var(--success); text-align: right;">+4.5%</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- TOOL 5: AUTO-HEDGER -->
-  <section class="section-darker" style="padding: 100px 0;">
     <div class="container">
       <div class="tool-feature animate-on-scroll">
         <div class="tool-feature-content">
-          <span class="step-tool">03 &mdash; Position Auto-Hedger</span>
+          <span class="step-tool">02 &mdash; Position Auto-Hedger</span>
           <h2>Optimal 2-leg spread hedges. Automatically.</h2>
           <p>The most advanced tool. Creates PM strike pairs, finds different calls/puts on Bybit for each, and calculates max drawdown, avg profit, and avg loss for the full BTC price plane.</p>
           <ul class="feature-list">
@@ -225,12 +169,6 @@
           <div class="flow-arrow">&rarr;</div>
           <div class="flow-step flow-step-active">
             <div class="flow-icon">02</div>
-            <div class="flow-label">Optimize</div>
-            <div class="flow-sub">Find best hedge</div>
-          </div>
-          <div class="flow-arrow">&rarr;</div>
-          <div class="flow-step">
-            <div class="flow-icon">03</div>
             <div class="flow-label">Auto-Hedge</div>
             <div class="flow-sub">Spread optimize</div>
           </div>
@@ -268,7 +206,6 @@
         <div class="footer-col">
           <h4>Tools</h4>
           <a href="./backtester/">Backtester</a>
-          <a href="./designer/">Designer</a>
           <a href="./auto-hedger/">Auto-Hedger</a>
         </div>
         <div class="footer-col">
