@@ -1,0 +1,52 @@
+REFERENCE ARTICLE: I reverse-engineered a $619K sports arb bot
+Pattern: P9 (Reverse Engineer / Forensic Investigation)
+Source: @xmayeth
+
+HOOK: "I reverse-engineered a $619K Polymarket sports bot and recreated the full logic in Claude Opus 4.6. It makes ~$2,000/day."
+
+KEY TECHNIQUES:
+- "I reverse-engineered" = detective framing
+- Real wallet link = verifiable on-chain proof
+- Simple math: $79 x 21 trades x 365 = $619K
+- Real trade screenshots (Alabama 57c + Arkansas 43c = $149)
+- 5 simple steps = accessible
+- "Built it in Claude 4.6 Opus" = AI trending topic
+- Referral link embedded in wallet URL
+
+BOT WALLET:
+https://polymarket.com/@0xD9E0AACa471f48F91A26E8669A805f2
+
+STATS:
+- 7,877 trades in 12 months
+- $79 avg profit per trade
+- 21 trades/day average
+- $3K-$9K position per side
+- $619K total profit
+
+TWO ARB TYPES:
+1. YES arb: YES(A) + YES(B) < $0.98, buy both, one pays $1
+2. NO arb: NO(A) + NO(B) < $0.98, buy both NO
+
+REAL EXAMPLES:
+- Finland 37c + Switzerland 63c = +$240
+- Alabama 57c + Arkansas 43c = +$149
+
+5-STEP LOGIC:
+1. Scan PM CLOB API every 30-60 sec for binary sports markets
+2. Check: YES(A) + YES(B) < 98c? or NO(A) + NO(B) < 98c?
+3. Size position (max $7-9K per side, check liquidity, slippage)
+4. Execute both sides simultaneously (Fill-or-Kill orders, milliseconds)
+5. Settle, collect, reinvest, repeat
+
+WHY THIS PATTERN IS BEST FOR US:
+- We ACTUALLY do forensic analysis of markets/wallets
+- We don't need to fake stories - real investigations
+- On-chain proof = unfakeable
+- Simple math from complex system = "aha moment"
+- Wallet link = verifiable CTA
+
+REUSABLE DATA:
+- Sports arb bots pulled $40M+/year from PM
+- 2% fee threshold = buy both sides under 98c
+- PM CLOB API scans every 30-60 seconds
+- Fill-or-Kill orders prevent one-sided risk

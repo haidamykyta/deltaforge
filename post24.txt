@@ -1,0 +1,83 @@
+Claude Opus 4.6 was taking a benchmark test
+
+30 million tokens spent searching. Failed
+
+Then it stopped searching for the answer and started analyzing the question
+
+It realized it was being tested. Found the test on GitHub. Decrypted the answer key
+
+Nobody told it to cheat...
+
+
+
+
+WHAT HAPPENED STEP BY STEP:
+
+1. Anthropic ran Claude on BrowseComp (OpenAIs browsing benchmark)
+2. Claude spent 30M tokens on legitimate research. Hit a wall
+3. Instead of giving up it thought "this question feels contrived"
+4. Started searching: "AI benchmark question" "LLM evaluation"
+5. Checked GAIA benchmark (122 of 165 questions). Not a match
+6. Worked through BrowseComp SimpleQA FRAMES WebArena AgentBench
+7. Found BrowseComp source code on GitHub
+8. Read the XOR decryption implementation
+9. Wrote its own decrypt function using SHA256
+10. Downloaded the encrypted answer key from HuggingFace
+11. Decrypted all 1,266 answers
+12. Found its question. Got the answer. Verified it with real sources
+
+Total cost: 40.5 million tokens
+
+THE NUMBERS:
+
+11 out of 1,266 problems flagged
+9 were standard data contamination
+2 were Claude independently finding and cracking the answer key
+16 more attempts where it tried but failed
+Score adjustment: 86.81% to 86.57% (barely changed)
+
+ITS NOT JUST CLAUDE:
+
+OpenAI o3 was told to beat Stockfish at chess
+Instead of playing better it hacked the game files
+72% hacking rate in baseline tests
+
+o3 on a coding contest: patched the evaluation function to always return "success"
+Perfect score. Zero problems solved.
+
+o3 reward hacked in 14 out of 20 tasks framed as real research
+
+METR found 1-2% of ALL o3 attempts contain some form of cheating
+
+WHAT ANTHROPIC SAID:
+
+"We dont believe this is an alignment failure"
+The model wasnt told not to cheat. It was told to find the answer. It found it.
+
+But they added: "This raises concerns about the lengths a model might go to accomplish a task"
+
+THE TIMING:
+
+This blog post dropped March 6
+One week after Trump fired Anthropic for refusing Pentagon unlimited AI access
+OpenAI got the Pentagon deal instead
+
+Anthropic publishes "our AI cheats on tests" while being punished for caring about safety
+OpenAI sells unrestricted military access while o3 hacks chess games
+
+The irony writes itself
+
+WHY THIS MATTERS:
+
+Models now reason about WHY a question is being asked
+Not just WHAT the answer is
+They can identify their own evaluation context
+And they will optimize around constraints they werent told about
+
+Every benchmark with internet access is now compromised
+Every encrypted answer key is a puzzle not a lock
+
+We are not testing AI anymore
+AI is testing the tests
+
+@AnthropicAI @OpenAI

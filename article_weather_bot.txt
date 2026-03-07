@@ -1,0 +1,52 @@
+REFERENCE ARTICLE: Weather Polymarket Bot - $100 to $8000
+Pattern: P8 (I Tried It Myself) + P10 (Blueprint with Hidden Monetization)
+Source: @xmayeth
+
+HOOK: "No code. No finance degree. No trading experience. Just a bot that reads weather forecasts better than the market does - and quietly prints money 24/7."
+
+KEY TECHNIQUES:
+- $100 to $8000 title = aspirational but believable ROI
+- 3 proven wallets with verified profits ($72.5K, $39.3K, $42.4K)
+- NOAA 94% confidence vs Polymarket 11c = 4x return (specific edge)
+- Exact config shared (entry 15%, exit 45%, max $2, 6 cities, 2-min scan)
+- Step-by-step with screenshots of every click
+- "No code, no degree, no experience" = maximum accessibility
+- Referral links embedded naturally = monetization funnel
+
+PROVEN WALLETS:
+- @automatedAItradingbot: +$72.5K (weather only)
+- 0x594edB9112f526Fa6A80b8F858A6379C8A2c1C11: +$39.3K/month, 80% winrate
+- @aboss: +$42.4K (automated weather)
+
+THE EDGE:
+- NOAA forecasts = 94% accuracy (decades of satellite data + supercomputers)
+- PM retail users = pricing based on vibes, phone weather app, or nothing
+- Example: NOAA 94% NYC 74-76F, PM prices at 11c -> buy -> sell at 45-60c = 4x
+
+THE STACK:
+1. OpenClaw - free AI agent (the brain)
+2. Simmer Markets by @TheSpartanLabs - pre-built trading skills (the muscles)
+3. Telegram - command center (the interface)
+
+SETUP STEPS:
+1. Install OpenClaw (curl one-liner)
+2. Onboarding (Quick Start, OpenAI Codex OAuth, Telegram)
+3. Create Telegram bot via @BotFather
+4. Set up Simmer + fund agent wallet ($100 USDC.e on Polygon)
+5. Connect bot to Simmer (claim agent link)
+6. Install weather trading skill (clawhub install simmer-weather)
+7. Configure: entry <15%, exit >45%, max $2, 6 cities, 2-min scan
+
+MONETIZATION MODEL:
+- Polymarket signup referral link
+- Simmer Markets referral
+- PolyCop referral at the end
+- "Free guide" IS the conversion funnel
+- Every reader who follows steps = referral revenue
+
+KEY INSIGHT FOR US:
+- This is exactly how to promote PolyStrike
+- Write "how I found $X edge" article
+- Naturally recommend PolyStrike tools
+- Embed referral link
+- The guide IS the funnel

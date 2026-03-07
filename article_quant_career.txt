@@ -1,0 +1,53 @@
+REFERENCE ARTICLE: How I'd Become a Quant If I Had to Start Over Tomorrow
+Pattern: P4 (Professor's Cheat Sheet) + P10 (Anatomy/Deep Dive)
+Source: @coldvisionXYZ
+
+HOOK: "In 2025, entry-level quants at top firms pulled $300K-$500K total comp. AI/ML hiring in finance grew 88% year-over-year. This article is everything I wish someone had handed me."
+
+KEY TECHNIQUES:
+- Video game levels framing ("can't skip levels")
+- Code snippets as authority signals (numpy, scipy, matplotlib)
+- Salary anchoring ($300K-$500K opener, $1.4M average at Jane Street)
+- Casual CT slang + heavy math = accessibility paradox ("it's over gng" next to Black-Scholes)
+- Specific homework with time estimates per level
+- Complete resource/book lists = bookmark bait
+- Part 2 teaser = engagement farming
+
+STRUCTURE (video game levels):
+Level 1: Probability (3-4 weeks) - Bayes, conditional thinking, expected value
+Level 2: Statistics (4-5 weeks) - hypothesis testing, regression, MLE
+Level 3: Linear Algebra (4-6 weeks) - matrices, eigenvalues, PCA
+Level 4: Calculus & Optimization (4-5 weeks) - derivatives, Taylor, convex opt
+Level 5: Stochastic Calculus (6-8 weeks) - Ito's lemma, Black-Scholes, Greeks
+Bonus: Polymarket section - LMSR pricing, softmax = prediction markets
+Career: 4 archetypes, salary tables, interview prep
+Toolbox: Python stack, data sources, reading list
+
+SALARY TABLE (attention anchor):
+Jane Street/Citadel/HRT:
+- New grad: $300K-$500K+
+- Mid career (3-7yr): $550K-$950K
+- Senior (8+yr): $1M-$3M+
+- Star trader/PM: $3M-$30M+
+
+POLYMARKET CONNECTION (LMSR):
+- Cost function: C(q) = b * ln(sum(exp(q_i/b)))
+- Price of outcome i: p_i = exp(q_i/b) / sum(exp(q_j/b))
+- This IS the softmax function powering every neural network
+- Market maker max loss = b * ln(n)
+
+KEY QUOTES FOR POSTS:
+- "Forget everything you think you know about trading"
+- "most of what looks like NOT A BS is actually NOISY BS"
+- "The math gets harder. The paycheck gets longer."
+- "Estimation error is the real enemy"
+- "Tools have democratized. Conviction hasn't."
+- "The math is the moat"
+
+REUSABLE FOR OUR CONTENT:
+- Video game level framing for PM trading education
+- Code screenshots as authority in PM tool articles
+- Salary tables for "why prediction markets matter"
+- LMSR/softmax = great PM educational post
+- "5 levels to become a PM trader" series
+- Casual tone + serious data = our voice

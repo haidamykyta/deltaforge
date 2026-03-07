@@ -1,0 +1,53 @@
+REFERENCE ARTICLE: Anatomy of OpenClaw
+Pattern: P10 (Anatomy/Deep Dive) + P11 (Gamification)
+Source: @xmayeth
+
+HOOK: "I cut my token spend by 3x and in 4 hours built a bot that makes me $300/day - simply because I figured out how OpenClaw actually works inside."
+
+KEY TECHNIQUES:
+- Architecture as story (Gateway = circulatory system, Agent = brain, Tools = hands)
+- Two-level memory (bootstrap vs semantic search)
+- 6 numbered components = scannable structure
+- 5 mistakes checklist at end = fear + actionable
+- "Bookmark this right now" CTA planted early
+- Pixel art / RPG aesthetic for technical diagrams
+
+BANNER FORMULA:
+- "You're using OpenClaw wrong. That's why your agent only runs at 5%."
+- Accusation + specific pain number + angry mascot + red/black urgency
+
+FULL ARTICLE TEXT:
+
+Anatomy of OpenClaw: a guide after which you'll build agents differently
+
+I cut my token spend by 3x and in 4 hours built a bot that makes me $300/day - simply because I figured out how OpenClaw actually works inside.
+
+Most people use it blind. They install skills, write prompts, tweak settings - but have no idea what's happening under the hood. A black box. Even though it's completely transparent.
+
+Did you know OpenClaw has two types of memory - bootstrap and semantic search? If not - you're only using your agent at half capacity.
+
+Or that you can control your agent from a plain text editor and get results 95% better than most people.
+
+Or that if you're running your agent "out of the box", you're spending 3x more tokens (= money) than you need to?
+
+I'm going to tell you a lot of interesting things about OpenClaw. Bookmark this article right now so you don't lose it!
+
+OpenClaw is built from six parts. Each one works independently, but together they form a full-fledged agent.
+
+Gateway - the core of the system. Everything goes through it. It maintains persistent connections to Telegram, WhatsApp, Discord, Slack. When a message comes in - Gateway decides which agent gets it, pulls up the history, assembles context and sends it to the LLM.
+
+Agent - the brain. Receives assembled context from Gateway: chat history, memory files, available tools. Thinks, decides which tool to call, builds a response.
+
+Tools - the agent's hands. exec runs shell commands. browser opens pages, clicks, takes screenshots. file reads and writes files. memory searches through long-term notes.
+
+Workspace - long-term memory. A folder with files where everything the agent needs to know between sessions is written down.
+
+Sessions - memory of a single conversation. Full history of a specific dialogue.
+
+Nodes - physical devices. Your Mac, phone, remote server. They connect to Gateway and expand what the agent can do.
+
+All of this is text files. Not a database, not binaries. Plain .md and .json you open in an editor and change by hand.
+
+[Full workspace section, gateway section, tools + cron section, multi-agent section, 5 mistakes checklist - see memory files for complete analysis]
+
+Inspired by https://docs.google.com/document/d/1n7RqTycEABwTzUN2_HbfZZkPO7-vFUVK/edit
