@@ -1,0 +1,74 @@
+REFERENCE ARTICLE: How Jump Trading, Jane Street, and a Guy With $10K Fighting Over the Same Polymarket Order Book
+Pattern: P10 (Deep Dive) + P9 (Reverse Engineer) + "Extinction Event" narrative
+Source: @coldvisionXYZ (Part 4 of Quant series)
+
+HOOK: "I want to tell you about a mass extinction event happening in real time."
+
+BANNER: Bull/bear coins (reused from Part 3, Financial Symbolism style)
+
+KEY TECHNIQUES:
+1. "Mass extinction event" opening = dramatic narrative hook (not just education)
+2. Real person story (@defiance_cr) = named protagonist, $10K->$700/day->dead
+3. Bloomberg data + real wallet links = verifiable proof
+4. Technical depth (EIP-712, CTF, ERC-1155) = maximum authority signal
+5. "Let me put this bluntly" = direct address, no hiding behind math
+6. Warning/pessimism framing = "the window is closed" creates urgency
+7. Code snippets (Solidity-style) = technical trust signal
+8. Specific numbers everywhere ($9B volume, 3.7% addresses = 37.4% volume, 2.7 sec arb window)
+
+STRUCTURE (7 parts, "how the machine works"):
+Part I: The Machine - Polymarket CLOB architecture (minting/merging/CTF)
+Part II: Reservation Price - Avellaneda-Stoikov framework + why PM breaks it
+Part III: Bounded Inventory - GLFT framework, position limits
+Part IV: Adverse Selection - Glosten-Milgrom, Kyle's lambda, VPIN toxicity
+Part V: Production Stack - 4-layer spread algorithm + kill switches
+Part VI: Technical Infrastructure - 4-module bot architecture, latency
+Part VII: What This Means - "the window is closed" conclusion
+
+KEY DATA POINTS:
+- @defiance_cr: $10K start, $700-800/day peak, bot now open-sourced (unprofitable)
+- Jump Trading: equity stakes in both Polymarket AND Kalshi, 20-person desk
+- DRW: recruiting PM desk, $200K base salary
+- "JaneStreetIndia"/Account88888: $360K in 25 days on 15-min crypto
+- Anonymous sports MM: risks $300K on single NFL Sunday
+- PM 2024: $9B volume (120x vs 2023's $73M), $13B in 2025
+- 3.7% of addresses = 37.4% of volume (bots dominate)
+- 0.04% of addresses captured 71% of all realized gains
+- 70% of addresses lost money
+- Arb window: 12.3 sec (2024) -> 2.7 sec (Q1 2026)
+- 73% of arb profits by sub-100ms bots
+- Gas: ~$0.007 per transaction on Polygon
+
+KEY FORMULAS:
+- Reservation price: r = s - q*gamma*sigma^2*(T-t)
+- Optimal spread: 2*gamma*sigma^2*(T-t) + (2/kappa)*ln(1 + kappa/gamma)
+- Glosten-Milgrom zero-profit ask/bid
+- Kyle's lambda: sigma_v / (2*sigma_u)
+- VPIN: |V_buy - V_sell| / (V_buy + V_sell)
+- Fee formula: baseRate * min(price, 1-price) * size
+- Logit jump-diffusion (Dalen 2025)
+
+KEY QUOTES:
+- "I want to tell you about a mass extinction event happening in real time"
+- "incredibly underdeveloped compared to traditional crypto markets - mostly individual traders clicking buttons"
+- "this bot is NOT profitable in current market conditions due to increased competition"
+- "the window where $10K and a Python script could compete is closed"
+- "The firms that understood this first already have their 20-person desks built"
+
+WHAT MAKES THIS THE BEST ARTICLE IN THE SERIES:
+1. Named protagonist with arc (rise and fall of @defiance_cr)
+2. Real company names + real dollar amounts = undeniable authority
+3. Technical depth exceeds any other PM article anywhere
+4. Pessimistic conclusion = contrarian (everyone else says "you can do it too")
+5. Specific API details (rate limits, tick sizes, fee formulas) = actionable
+6. Kill switch architecture = practical, not theoretical
+
+REUSABLE FOR US:
+- @defiance_cr story = "the retail MM who got crushed by Jump" post
+- 0.04% captured 71% of gains = "the truth about PM profits" post
+- VPIN toxicity = "how to know when to stop trading" educational post
+- Arb window compression (12.3s -> 2.7s) = "PM is getting harder" data post
+- Polymarket CLOB architecture = standalone educational article
+- "Mass extinction" narrative frame for any competitive landscape analysis
+- Production stack details for PolyStrike articles
+- Real wallet links = verifiable CTA elements
