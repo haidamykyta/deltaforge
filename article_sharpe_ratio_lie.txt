@@ -1,0 +1,59 @@
+REFERENCE ARTICLE: Your Hedge Fund's Sharpe Ratio Is a Lie
+Pattern: P10 (Deep Dive) + P2 (Accusation) + "Bridge" structure (TradFi -> PM)
+Source: @coldvisionXYZ (Part 3 of Quant series)
+
+HOOK: "Your Hedge Fund's Sharpe Ratio Is a Lie. Prediction Markets Are the Only Place It Can't Hide."
+
+BANNER: Dark background + gold bull coin + silver bear coin = "Financial Symbolism" (physical objects as metaphor)
+
+KEY TECHNIQUES:
+1. Accusation title - "Is a Lie" = aggressive + academic combo
+2. Bridge structure - Parts I-VI TradFi, VII-VIII Prediction Markets
+3. 10,000+ words - scale escalation continues (5K -> 8K -> 10K+)
+4. Name-dropping (Renaissance, AQR, Bridgewater, Two Sigma) = authority by association
+5. 25+ academic references = paper format on steroids
+6. Less CT slang, more gravitas - tone evolves with depth
+7. "The question is no longer..." closer = positions PM as finance's future
+8. Real quotes from real people (Robert Mercer: "We're right 50.75% of the time")
+
+STRUCTURE (8 parts, bridge from TradFi to PM):
+Part I: Overfitting Crisis - Deflated Sharpe Ratio, why most backtests are lies
+Part II: Factor Decomposition - CAPM -> Fama-French -> APT, alpha vs beta
+Part III: Portfolio Construction - Markowitz, Black-Litterman, Risk Parity
+Part IV: Bayesian Regime Detection - HMMs, Hamilton filter, Renaissance connection
+Part V: Machine Learning - signal-to-noise, triple barrier, meta-labeling
+Part VI: Monte Carlo Stress Testing - VaR, reverse stress testing
+Part VII: Bridge to PM - LMSR = softmax, Black-Litterman for PM portfolios
+Part VIII: Institutional Invasion - PM as purest test of investment theory
+
+KEY FORMULAS:
+- Deflated Sharpe Ratio (DSR) - 7 variables, proves most strategies are fake
+- Probabilistic Sharpe Ratio (PSR)
+- Black-Litterman posterior for PM portfolios
+- LMSR = softmax (same as Part 1 but deeper context)
+- Risk parity - equalize risk contributions
+- Walk-forward efficiency (WFE)
+
+KEY QUOTES:
+- "Your Hedge Fund's Sharpe Ratio Is a Lie"
+- "Every position resolves to truth"
+- "testing more than 45 configurations virtually guarantees finding a fake Sharpe > 1.0"
+- "We're right 50.75% of the time... You can make billions that way." - Robert Mercer
+- "The question is what happens when the most sophisticated probability-assessment technology ever built is aimed at markets where the only thing that matters is whether you were right"
+
+EVOLUTION OF THE SERIES:
+Part 1: White banner, 5 levels, CT slang + math, "welcome to quant"
+Part 2: Black banner, 8 parts story arc, PM in every section, "going deeper"
+Part 3: Symbolic banner, 8 parts bridge, TradFi->PM, "the future is here"
+- Scale: 5K -> 8K -> 10K+ words
+- Tone: casual -> serious -> gravitas
+- Banners: white academic -> dark academic -> financial symbolism
+
+REUSABLE FOR US:
+- "X Is a Lie" title format = instant hook for any topic
+- Bridge structure (old world -> new world) for PM education
+- Black-Litterman for PM portfolios = standalone article
+- Deflated Sharpe = "why most PM strategies fail" post
+- Series escalation model: white -> dark -> symbolic banners
+- Name-dropping real firms/people = authority signal
+- "Every position resolves to truth" = PM tagline potential
