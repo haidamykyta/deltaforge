@@ -2005,6 +2005,34 @@ footer {
   100% { background-position: 64px 64px, 64px 64px; }
 }
 
+/* --- HERO: Dark text for readability over video bg --- */
+.hero h1 {
+  background: none;
+  -webkit-background-clip: unset;
+  -webkit-text-fill-color: #0A0E17;
+  background-clip: unset;
+  color: #0A0E17;
+}
+
+.hero .tag-chip {
+  color: #0A0E17;
+  background: rgba(147, 166, 255, 0.35);
+  border-color: rgba(77, 107, 254, 0.4);
+}
+
+.hero .hero-sub {
+  color: #1a1f2e;
+}
+
+.hero .btn-secondary {
+  color: #0A0E17;
+  border-color: rgba(10, 14, 23, 0.3);
+}
+
+.hero .chip {
+  color: #0A0E17;
+}
+
 /* --- Mobile: poster image instead of video --- */
 @media (max-width: 768px) {
   .global-video-bg {
