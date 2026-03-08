@@ -12,7 +12,9 @@ Then, seven days later, a tweet paused the tariffs. The S&P 500 posted one of it
 
 $10 trillion destroyed by words. Billions restored by words. The actual economic impact? Somewhere in between. Penn Wharton estimated a 6% long-run GDP reduction. Significant, but nowhere near the market reaction in either direction.
 
-This is not a bug. This is how markets actually work. And an economist named Deirdre McCloskey explained why back in 1983.
+This is not a bug. This is how markets actually work. As Trump himself said after the pause: "This is a great time to buy." The president of the United States explicitly told you that his own words were the trade signal - not any economic indicator.
+
+An economist named Deirdre McCloskey explained why back in 1983.
 
 ---
 
@@ -36,7 +38,9 @@ McCloskey wrote: "Economists use stories as geologists do, and metaphors as phys
 
 Or more bluntly: "Economics is words all the way down."
 
-At the time, most economists dismissed her. Economics was supposed to be rigorous. Scientific. Data-driven. The idea that it was fundamentally a form of storytelling felt like an insult.
+At the time, most economists dismissed her. Paul Samuelson, the godfather of modern economics, reportedly called her work "an exercise in literary criticism, not economics." Economics was supposed to be rigorous. Scientific. Data-driven. The idea that it was fundamentally a form of storytelling felt like an insult.
+
+McCloskey did not back down. In a later interview she said: "The economy is not a machine. It is a conversation among humans. And conversations are won by the better storyteller, not the better statistician."
 
 Forty years later, prediction markets proved she was right.
 
@@ -74,6 +78,8 @@ Fed Chair Jerome Powell's words routinely move markets more than the actual data
 
 The market did not trade the number. It traded the story Powell told about the number.
 
+Jamie Dimon, CEO of JPMorgan Chase, captured this perfectly in his 2025 shareholder letter: "Markets can be moved by headlines, tweets, and sound bites faster than they can be moved by fundamentals. We are in an era where perception drives price before reality catches up."
+
 This is not new. But the scale has changed dramatically.
 
 In 2022, during the inflation crisis, 48% of S&P 500 trading days had moves greater than 1%. Markets were hypersensitive to every data release. By 2024, that number dropped to normal levels - average daily volatility fell to 0.91%.
@@ -82,7 +88,7 @@ Then came 2025. Volatility jumped back to 1.18%. But not because of inflation da
 
 George Soros described this phenomenon decades ago with his theory of reflexivity: "Financial markets, far from accurately reflecting all the available knowledge, always provide a distorted view of reality."
 
-Soros went further: markets do not merely discount the future - they help shape it. When enough participants believe a narrative, their actions make it real. A bank run is not caused by insolvency. It is caused by the story that the bank might be insolvent. The narrative creates the reality it describes.
+Soros went further: "Every bubble has two components: an underlying trend that prevails in reality and a misconception relating to that trend." Markets do not merely discount the future - they help shape it. When enough participants believe a narrative, their actions make it real. A bank run is not caused by insolvency. It is caused by the story that the bank might be insolvent. The narrative creates the reality it describes.
 
 McCloskey and Soros are saying the same thing from different angles. The economist says: "We are all storytellers." The trader says: "The story IS the market."
 
@@ -102,6 +108,8 @@ A single trader from France - later identified as "Theo" - wagered $80 million a
 
 His thesis was not based on polling data. It was based on a narrative: the "shy Trump voter" effect. He commissioned his own informal polling - asking people about their social circles rather than who they would personally vote for.
 
+In an interview with the Wall Street Journal, Theo explained his logic: "I asked friends and strangers not who they would vote for, but who their neighbors would vote for. The answers were very different from the polls." He turned a story - one that pollsters dismissed - into an $85 million profit.
+
 One person's narrative conviction moved an entire prediction market. Academic studies later confirmed it: "Polymarket attracts large, aggressive, and risk-seeking speculators, and because the platform does not cap positions, one player can move entire markets, producing prices that reflect individual beliefs rather than collective wisdom."
 
 The wisdom of the crowd became the conviction of one storyteller with deep pockets.
@@ -110,7 +118,7 @@ The wisdom of the crowd became the conviction of one storyteller with deep pocke
 
 After Biden's June 27 debate performance, Polymarket odds of him dropping out spiked from 20% to 70% within days. Then surged to 80% after a New York Times report and Obama expressing concerns.
 
-No official announcement had been made. No data changed. The rhetoric shifted - "Biden cannot do this" became the dominant narrative - and $100 million in trading volume followed the story.
+No official announcement had been made. No data changed. The rhetoric shifted - "Biden cannot do this" became the dominant narrative - and $100 million in trading volume followed the story. One Democratic strategist told CNN: "The debate did not change any facts about Biden's record. It changed the story. And in politics, when the story changes, everything changes."
 
 **The Assassination Asymmetry**
 
@@ -135,6 +143,8 @@ These are extreme examples. But they illustrate something fundamental about how 
 What did these traders have? Not better models. Not better data analysis. They had the narrative before everyone else. They knew which story was about to become true.
 
 Senator Chris Murphy put it starkly: "People around Trump are profiting off war and death." Congressman Ritchie Torres introduced insider trading legislation for prediction markets.
+
+Polymarket founder Shayne Coplan responded to the controversy: "Markets are information tools. If someone has information, the market should reflect it as fast as possible. That is the whole point." Whether you agree or not, Coplan is making McCloskey's case: the market is a machine for processing stories, not just data.
 
 But here is the deeper point: even without insider information, every trade is a bet on a narrative. When you buy YES on "Fed rate cut before July," you are not pricing a mathematical probability. You are betting that the story of economic weakness will be more persuasive than the story of persistent inflation. You are betting on rhetoric.
 
@@ -176,6 +186,8 @@ A 2025 academic paper called this "prediction laundering": the "wisdom" produced
 
 In other words: prediction markets take stories and convert them into numbers. The numbers look objective. But they are still stories underneath.
 
+As one Polymarket trader put it on CT: "I do not trade probabilities. I trade vibes. The vibe shifts before the data does, and by the time the data confirms it, the money is already made."
+
 ---
 
 ## Part 8: What This Means for Your Trades
@@ -203,6 +215,8 @@ As McCloskey would say: the first person you need to stop persuading is yourself
 The next time you see a weak market reaction to strong data, do not be surprised. The market is just waiting for someone to step up to the microphone and tell it what those numbers really mean.
 
 Because in the end, economics is not about what the numbers say. It is about who tells the most convincing story about them.
+
+Or as McCloskey wrote forty years ago: "The scientific community does not consist of observing machines. It consists of humans arguing." The same is true of markets. Always has been. The only difference now is that Polymarket lets you bet on who is arguing best.
 
 ---
 
