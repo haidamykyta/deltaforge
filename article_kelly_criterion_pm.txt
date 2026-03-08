@@ -1,0 +1,161 @@
+ARTICLE ANALYSIS: "Control your Capital on Prediction Markets with Kelly Criterion"
+Source: Unknown author, banner shows math icons x Polymarket logo
+Date analyzed: Mar 8, 2026
+
+=== CLASSIFICATION ===
+
+Type: VIRAL education (pure value, high shareability)
+Pattern: P4 (Professor's Cheat Sheet) - purest form
+Trigger: Value (primary) + Authority (formulas + charts)
+Format: X Article, ~1500 words, 5 sections with formulas + matplotlib charts
+Banner style: "Grid + Logo Mashup" (new sub-style)
+
+=== WHY THIS ARTICLE GETS VIEWS ===
+
+1. PROGRESSIVE SIMPLIFICATION (new technique):
+- Section 1: Raw Kelly formula F = (Kp-1)/(K-1) - looks scary
+- Section 2: Simplified for PM: F = (p-P)/(1-P) - less scary
+- Section 3: Plain English: "Position size = edge / potential profit" - now you GET it
+- Section 4: Counterintuitive example - now you're SURPRISED
+- Section 5: Practical fractional Kelly - now you CAN USE it
+- Each section = new "aha moment". Reader can't stop reading.
+- KEY: The article gets SIMPLER as it goes, not harder. Reader feels smarter with each paragraph.
+
+2. ANALOGY ANCHORING (new technique):
+- Speed = Distance / Time -> Kelly = Edge / Profit
+- This single analogy makes a complex formula INSTANTLY understandable
+- Full Kelly = 85 mph driving. Fractional = 65 mph. "Both get you there. Second won't crash."
+- Analogies make DRY MATH memorable and shareable
+- Reader can explain Kelly to a friend using the speed analogy = sharing = viral
+
+3. COUNTERINTUITIVE REVEAL (Section 4 - the hook INSIDE the article):
+- Case 1: P=0.2, p=0.4 (2x ratio) -> F = 0.25
+- Case 2: P=0.4, p=0.8 (2x ratio) -> F = 0.67
+- "Same ratio, VERY different result" = mind-blown moment
+- This ONE section could be a standalone viral post
+- "It's not just about 2x better. It's about how often you get paid and how big the payout is."
+- Counterintuitive math = highest shareability trigger in educational content
+
+4. CHARTS AS AUTHORITY + DWELL TIME:
+- F vs P (p=0.5): curved rational function = "Kelly accelerates on cheap prices"
+- F vs p (P=0.5): straight linear function = "confidence scales linearly"
+- Full Kelly vs 1/4 Kelly overlay = practical comparison
+- Matplotlib style = looks like REAL quant research output
+- Charts are CLEAN (white bg, blue lines, proper axes) = professional authority
+- People zoom into charts = dwell time = algorithm boost
+
+5. PHILOSOPHICAL CLOSER (new technique):
+- "Kelly is basically a formula to control greed"
+- "Full Kelly says: if you're perfectly right, buy this much. Fractional says: you're not perfectly right."
+- Ends with WISDOM, not CTA
+- Reader feels they learned something DEEP, not just a formula
+- More shareable than "like and follow" - people share wisdom
+
+6. BANNER: "Grid + Logo Mashup" (new sub-style):
+- White grid background (notebook/academic feel)
+- Dark circle with math icons (complex = authority signal)
+- Polymarket blue logo (brand recognition)
+- "X" symbol between them (= collaboration/mashup feel)
+- Title "Control your Capital on Prediction Markets" in bold black on top
+- Clean, minimal, professional - NOT clickbait, NOT aggressive
+- USE FOR: Educational PM articles, formula explainers, strategy guides
+- AI prompt: "Clean white grid notebook background, dark circle with mathematical icons and formulas, X symbol, Polymarket blue logo, bold black title '[text]', minimal professional style, 1600x900"
+
+=== STRUCTURE ANALYSIS ===
+
+Section 1: Basic Formula (30 sec read)
+- Raw Kelly formula with variable definitions
+- "In very simple words: Position size = edge / potential profit"
+- Bridge from scary math to plain English in same paragraph
+
+Section 2: PM Simplification (1 min read)
+- Converts traditional odds to PM prices: K = 1/P
+- Derives F = (p-P)/(1-P)
+- "We simplified it as much as possible" = reader reward
+
+Section 3: Logic Behind Formula (2 min read)
+- Speed analogy introduction
+- Cause-and-effect breakdown
+- Two situations with charts:
+  - Fixed P, varying p = linear (straight line)
+  - Fixed p, varying P = nonlinear (curved line)
+- "Cheap probabilities create very aggressive Kelly sizing" = key insight
+
+Section 4: Flipping the Logic (1 min read - THE HOOK)
+- Two cases that look identical (both 2x) but have very different Kelly fractions
+- 0.25 vs 0.67 = massive difference
+- Explanation: "It balances how often you win AND how much you win"
+- This is the SHAREABILITY PEAK of the article
+
+Section 5: Fractional Kelly (1.5 min read)
+- "What if your estimate is wrong?" = realistic
+- Driving speed analogy (85 vs 65 mph)
+- Practical scale: 1/2, 1/4, 1/8, <1/8 Kelly
+- "Most PM traders use 1/4 Kelly or less"
+- Philosophical closer: "formula to control greed"
+
+=== WHAT MAKES THIS DIFFERENT FROM OTHER MATH ARTICLES ===
+
+vs @coldvisionXYZ (Quant series):
+- SHORTER (1500 words vs 5000-10000)
+- SIMPLER (one concept, fully explained vs broad survey)
+- MORE ANALOGIES (speed, driving vs none)
+- LESS CT SLANG (formal but accessible vs "it's over gng")
+- FEWER REFERENCES (no academic papers section)
+
+vs @KnightShift (70th Minute):
+- NO LIVE EXAMPLE (pure theory vs RB Leipzig match proof)
+- MORE VISUAL (4+ charts vs formulas only)
+- SINGLE CONCEPT depth vs multi-concept application
+
+vs @xmayeth (posts):
+- NO STORY (pure education vs narrative wrapper)
+- NO NUMBERS in hook (no "$310K" or "$619K")
+- LONGER format (article vs short hook + images)
+
+=== KEY TAKEAWAY: WHY PURE VALUE ARTICLES GO VIRAL ===
+
+This article proves you DON'T always need:
+- Big numbers in the hook
+- A story/narrative wrapper
+- Forbidden knowledge framing
+- Personal experiment results
+
+You DO need:
+- Progressive simplification (complex -> simple in clear steps)
+- At least ONE counterintuitive insight (Section 4 = the shareability peak)
+- Clean visual proof (charts/formulas that LOOK impressive)
+- A philosophical/wisdom closer (not just "follow me")
+- Practical takeaway (fractional Kelly table = actionable)
+
+The article works because Kelly Criterion is:
+1. Universally relevant (any PM trader needs position sizing)
+2. Sounds impressive ("Kelly Criterion" = smart-sounding name)
+3. Has clear visual output (charts showing curves)
+4. Counterintuitive results (2x ratio != 2x Kelly)
+5. Immediately actionable (1/4 Kelly = one number to remember)
+
+=== REUSABLE FOR @MykytaHaida ===
+
+DIRECT article ideas from this:
+1. "Kelly Criterion says you should bet 0% on this market" - counterintuitive take
+2. "I applied Kelly to my last 50 PM trades. 34 were oversized." - P8 (I tried it)
+3. "The formula Wall Street uses to size bets. It says you're betting too much." - P2 (accusation)
+4. "Why cheap PM contracts make Kelly go crazy" - Section 3 insight as standalone post
+5. PolyStrike integration: Kelly as position sizing feature
+
+Techniques to steal:
+- Progressive simplification for any math article
+- Speed analogy format for any formula explanation
+- Counterintuitive comparison as "the hook inside the article"
+- Philosophical closer instead of CTA
+- Matplotlib charts as authority signals
+- Grid + Logo banner style for educational content
+
+=== DATA POINTS ===
+
+- Kelly for PM: F = (p-P)/(1-P)
+- Most PM traders use 1/4 Kelly or less
+- Fractional scale: 1/2 (tested model), 1/4 (standard), 1/8 (noisy), <1/8 (tail risk)
+- Counterintuitive: p=0.4/P=0.2 gives F=0.25, but p=0.8/P=0.4 gives F=0.67
+- Kelly original: F = (Kp-1)/(K-1) where K = 1/P for PM
