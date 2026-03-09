@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <link rel="icon" type="image/png" href="img/favicon.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Features - DeltaForge</title>
   <meta name="description" content="2 analytical tools in one platform: Backtester and Builder. Analyze prediction markets with real data.">
@@ -39,7 +40,14 @@
         <!-- strategies removed -->
         <a href="docs.html" class="nav-link">Docs</a>
         <a href="about.html" class="nav-link">About</a>
-        <a href="./backtester/" class="nav-cta">Try Backtester</a>
+        <div class="nav-dropdown">
+          <button class="nav-cta nav-dropdown-trigger">Tools <svg viewBox="0 0 12 8" width="10" height="6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M1 1.5L6 6.5L11 1.5"/></svg></button>
+          <div class="nav-dropdown-menu">
+            <a href="./backtester/">Backtester</a>
+            <a href="./builder/">Builder</a>
+            <a href="https://chromewebstore.google.com/detail/deltaforge/epbhogajbpkaojpenoieickbelibkclp?hl=en-US&utm_source=ext_sidebar" target="_blank">Chrome Extension</a>
+          </div>
+        </div>
       </div>
       <button class="nav-toggle" aria-label="Menu">
         <svg viewBox="0 0 24 24"><path d="M3 12h18M3 6h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
@@ -51,7 +59,6 @@
   <section class="hero" style="padding: 100px 0 60px;">
     <div class="container">
       <div class="section-header animate-on-scroll" style="margin-bottom: 0;">
-        <div class="tag-chip">2 Tools. One Platform.</div>
         <h1 style="max-width: 700px; margin: 0 auto 20px;">Every tool you need to analyze prediction markets.</h1>
         <p style="max-width: 600px; margin: 0 auto; font-size: 17px; color: var(--text-muted); line-height: 1.75;">From historical replay to P&L projections. Each tool builds on the previous one.</p>
       </div>
@@ -211,6 +218,7 @@
           <h4>Tools</h4>
           <a href="./backtester/">Backtester</a>
           <a href="./builder/">Builder</a>
+          <a href="https://chromewebstore.google.com/detail/deltaforge/epbhogajbpkaojpenoieickbelibkclp?hl=en-US&utm_source=ext_sidebar" target="_blank">Chrome Extension</a>
         </div>
         <div class="footer-col">
           <h4>Company</h4>
